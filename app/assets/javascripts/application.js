@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require ./vendor/underscore-min.js
+//= require ./vendor/backbone-min.js
+//= require ./vendor/rvsp-latest.js
+//= require ./vendor/three.js
+//= require ./vendor/d3.js
+//= require ./vendor/d3-three.js
+//= require ./vendor/TweenMax.min.js
+//= require ./vendor/TimelineMax.min.js
+//= require WY.js
+//= require_directory ./models
+//= require_directory ./views

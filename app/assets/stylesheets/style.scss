@@ -1,0 +1,15 @@
+.menu {
+  position:fixed;
+  top:20px;
+  left:20px;
+  width:250px;
+
+  background-color:#222;
+  .padding_wrapper {
+    padding:20px;
+    a {
+      color:white;
+      text-decoration: underline;
+    }
+  }
+}
