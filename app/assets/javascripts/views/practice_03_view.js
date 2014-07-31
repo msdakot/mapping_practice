@@ -1,11 +1,12 @@
-WY.views.practice_01_view = (function(){
-  var world_countries_json_data,
-      world_countries,
+WY.views.practice_03_view = (function(){
+  var korea_geojson_data,
+      world_geojson_data,
+      renderer,
       scene,
-      camera;
+      camera,
+      controls;
 
-
-  function practice_01_view(){
+  function practice_02_view(){
     load_shader();
   }
 
@@ -15,22 +16,31 @@ WY.views.practice_01_view = (function(){
     });
 
     WY.constants.ShaderLoader.on('load_complete', function(e){
-      load_world_countries_geojson();
+      load_geojson_korea();
     });
 
     WY.constants.ShaderLoader.load();
   }
 
-  function load_world_countries_geojson(){
+  function load_geojson_korea(){
     $.ajax({
+      url: '/assets/vadm.json',
       type: 'GET',
-      url: '/assets/world_countries.json',
       success: function(data){
-        if (data) {
-          world_countries_json_data = data;
-          init();
-          animate();
-        }
+        korea_geojson_data = data;
+        load_geojson_world();
+      }
+    });
+  }
+
+  function load_geojson_world(){
+    $.ajax({
+      url: '/assets/world_countries.json',
+      type: 'GET',
+      success: function(data){
+        world_geojson_data = data;
+        init();
+        animate();
       }
     })
   }
@@ -60,30 +70,41 @@ WY.views.practice_01_view = (function(){
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(
-      30, window.innerWidth / window.innerHeight, 0.5, 10000
+      45, window.innerWidth / window.innerHeight, 1, 100000
     );
 
-
+    camera.position.x = 818;
+    camera.position.y = -200;
     camera.position.z = 600;
-    camera.position.y = 1000;
-    camera.lookAt({x: 0, y: 0, z: 0});
+    camera.lookAt({x: 600, y: -200, z: 0});
+
+
+
+    var korea_countries = new WY.models.GeoJSONCountries({
+      geojson: korea_geojson_data
+    });
+
+    korea_countries.init();
+    scene.add(korea_countries.mesh);
     
 
-    world_countries = new WY.models.WorldCountries({
-      geojson: world_countries_json_data
+
+    var world_countries = new WY.models.GeoJSONCountries({
+      geojson: world_geojson_data
     });
 
     world_countries.init();
     scene.add(world_countries.mesh);
     
-    // TweenMax.to(camera.position, 20, {y: 0});
+     // TweenMax.to(camera.position, 10, {y: "+=3"});
 
   }
 
   function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
+    // controls.update();
   }
 
-  return practice_01_view;
+  return practice_02_view;
 })();

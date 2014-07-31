@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   get '/practice_02', :to => 'welcome#practice_02'
+  get '/practice_03', :to => 'welcome#practice_03'
   root 'welcome#index'
 
 
