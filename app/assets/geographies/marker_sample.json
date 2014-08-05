@@ -1,0 +1,14 @@
+{
+  "type": "FeaturesCollection",
+  "features": [
+    {
+      "properties": {
+        "name": "안양 파빌리온"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [126.9134, 37.4128]
+      }
+    }
+  ]
+}

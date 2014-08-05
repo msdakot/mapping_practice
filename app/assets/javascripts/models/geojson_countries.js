@@ -1,77 +1,84 @@
 WY.models.GeoJSONCountries = (function(){
   function GeoJSONCountries(params){
-    this.geojson = params.geojson;
-    this.mercator = d3.geo.equirectangular();
-    this.path = d3.geo.path().projection(this.mercator);
-    
-    // this.translate = this.mercator.translate();
-    // this.translate[0] = ;
-    // this.translate[1] = 0;
 
-    // this.mercator.translate(this.translate);
-    // this.mercator.scale(200);
+    THREE.Object3D.call( this );
+
+    this.geojson = params.geojson;
+
 
     this.countries = [];
-    this.material = null;
-    this.uniforms = {};
-    this.attributes = {};
+    
   }
 
-  GeoJSONCountries.prototype = {
-    init: function(){
-      this.mesh = new THREE.Object3D();
+  GeoJSONCountries.prototype = Object.create( THREE.Object3D.prototype );
 
-      _.each(this.geojson.features, _.bind(function(geo_feature){
-        var properties = geo_feature.properties;
-        var feature = this.path(geo_feature);
-        // console.log(feature);
-        var shapes = transformSVGPathExposed(feature);
+  GeoJSONCountries.prototype.init = function(){
 
-        _.each(shapes, _.bind(function(shape){
-          this.countries.push({data: properties, shape: shape});
-        }, this));
+    _.each(this.geojson.features, _.bind(function(feature, i){
+      var properties = feature.properties;
+      var geometry = feature.geometry;
+      // console.log(geometry.coordinates.length);
+      var color = new THREE.Color(colorbrewer.YlGn[6][i % 6]);
 
+      _.each(geometry.coordinates, _.bind(function(coordinate){
+        // console.log(geometry);
+        // console.log(coordinate[0]);
+
+        if (geometry.type == "MultiPolygon") {
+
+          _.each(coordinate, _.bind(function(sub_coordinate){
+
+            var shape_contours = this.convert_geometries_to_shapes(sub_coordinate);
+            // console.log(shape_contours);
+            var shape = new THREE.Shape(shape_contours);
+            var shape_geometry = new THREE.ShapeGeometry(shape);
+            
+            var country_mesh = new WY.models.CountryMesh({
+              geometry: shape_geometry,
+              color: color.clone()
+            });
+
+            country_mesh.init();
+
+            this.add(country_mesh);
+
+          }, this));
+
+        } else if (geometry.type == "Polygon"){
+          var shape_contours = this.convert_geometries_to_shapes(coordinate);
+          // console.log(shape_contours);
+          var shape = new THREE.Shape(shape_contours);
+          var shape_geometry = new THREE.ShapeGeometry(shape);
+          
+          var country_mesh = new WY.models.CountryMesh({
+            geometry: shape_geometry,
+            color: color.clone()
+          });
+
+          country_mesh.init();
+
+          this.add(country_mesh);
+          
+        }
+        
       }, this));
-
-      this.material = new THREE.ShaderMaterial({
-        uniforms: this.uniforms,
-        attributes: this.attributes,
-        vertexShader: WY.constants.ShaderLoader.shaders.basic_line.vertex,
-        fragmentShader: WY.constants.ShaderLoader.shaders.basic_line.fragment,
-
-        blending: THREE.AdditiveBlending,
-        depthTest: false,
-        depthWrite: false,
-        transparent: true,
-        sizeAttenuation: true
-      });
-
-      _.each(this.countries, _.bind(function(country){
-        country.geometry = country.shape.extrude({
-          amount: 0.1,
-          bevelEnabled: false
-        });
-
-        _.each(country.geometry.vertices, function(vertex){
-          // vertex.x *= -1;
-          vertex.y *= -1;
-        });
-
-        country.mesh = new THREE.Line(country.geometry, this.material);
-        // country.mesh.rotation.x = Math.PI;
-        // country.mesh.translateX(-490);
-        // country.mesh.translateZ(50);
-        // country.mesh.translateY(20);
-
-        this.mesh.add(country.mesh);
-
-        console.log(country.mesh.geometry.vertices);
-
-      }, this));
-
-
-    }
+    }, this));
   };
+
+
+
+  GeoJSONCountries.prototype.convert_geometries_to_shapes =  function(coordinate) {
+    var vertices = [];
+
+    _.each(coordinate, function(vertex){
+      vertices.push(new THREE.Vector2(vertex[0], vertex[1]));
+    });
+
+    vertices.push(new THREE.Vector2(coordinate[0][0], coordinate[0][1]));
+
+    return vertices;
+  };
+
 
   return GeoJSONCountries;
 })();

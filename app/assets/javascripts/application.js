@@ -18,8 +18,8 @@
 //= require ./vendor/three.js
 //= require ./vendor/d3.js
 //= require ./vendor/d3-three.js
+//= require ./vendor/colorbrewer.js
 //= require ./vendor/TweenMax.min.js
-//= require ./vendor/trackball_controls.js
 //= require ./vendor/TimelineMax.min.js
 //= require WY.js
 //= require_directory ./models

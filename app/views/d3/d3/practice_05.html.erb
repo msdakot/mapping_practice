@@ -1,0 +1,11 @@
+<%= render '/layouts/d3_menu' %>
+
+<div class="refresh_area">
+  <%= link_to '데이터 추가하기', 'javascript:void(0);', :class => 'refresh_btn' %>
+</div>
+
+<script>
+  $(document).ready(function (e) {
+    WY.views.d3_practice_05_view();
+  });
+</script>

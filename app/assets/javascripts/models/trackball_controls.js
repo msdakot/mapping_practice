@@ -3,7 +3,7 @@
  * @author Mark Lundin  / http://mark-lundin.com
  */
 
-THREE.TrackballControls = function ( object, domElement ) {
+THREE.TrackballControls = function ( object, domElement, _target ) {
 
   var _this = this;
   var STATE = { NONE: -1, ROTATE: 0, ZOOM: 1, PAN: 2, TOUCH_ROTATE: 3, TOUCH_ZOOM_PAN: 4 };
@@ -36,7 +36,7 @@ THREE.TrackballControls = function ( object, domElement ) {
 
   // internals
 
-  this.target = new THREE.Vector3();
+  this.target = _target;
 
   var EPS = 0.000001;
 
@@ -264,7 +264,6 @@ THREE.TrackballControls = function ( object, domElement ) {
 
         _this.object.position.add( pan );
         _this.target.add( pan );
-
         if ( _this.staticMoving ) {
 
           _panStart.copy( _panEnd );
@@ -326,7 +325,11 @@ THREE.TrackballControls = function ( object, domElement ) {
 
     _this.checkDistances();
 
+
     _this.object.lookAt( _this.target );
+
+    _this.object.position.x = _this.target.x;
+
 
     if ( lastPosition.distanceToSquared( _this.object.position ) > EPS ) {
 
@@ -406,7 +409,7 @@ THREE.TrackballControls = function ( object, domElement ) {
 
     if ( _state === STATE.NONE ) {
 
-      _state = event.button;
+      _state = 2;//; event.button;
 
     }
 

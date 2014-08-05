@@ -1,5 +1,6 @@
-WY.views.practice_02_view = (function(){
+WY.views.practice_04_view = (function(){
   var korea_geojson_data,
+      world_geojson_data,
       renderer,
       scene,
       camera,
@@ -11,22 +12,33 @@ WY.views.practice_02_view = (function(){
 
   function load_shader(){
     WY.constants.ShaderLoader = new WY.models.ShaderLoader({
-      shader_list: ['/assets/basic_line']
+      shader_list: ['/assets/basic_line', '/assets/basic_color']
     });
 
     WY.constants.ShaderLoader.on('load_complete', function(e){
-      load_geojson();
+      load_geojson_korea();
     });
 
     WY.constants.ShaderLoader.load();
   }
 
-  function load_geojson(){
+  function load_geojson_korea(){
     $.ajax({
       url: '/assets/vadm.json',
       type: 'GET',
       success: function(data){
         korea_geojson_data = data;
+        load_geojson_world();
+      }
+    });
+  }
+
+  function load_geojson_world(){
+    $.ajax({
+      url: '/assets/world_countries.json',
+      type: 'GET',
+      success: function(data){
+        world_geojson_data = data;
         init();
         animate();
       }
@@ -61,49 +73,52 @@ WY.views.practice_02_view = (function(){
       45, window.innerWidth / window.innerHeight, 1, 100000
     );
 
-
-    camera.position.z = 25;
-    camera.position.y = -122;
-    camera.position.x = 926;
-
-    // var mesh = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshBasicMaterial({color: 0xFF0000}));
-    // scene.add(mesh);
-
-    // mesh.position.set(922.2832753173957, 127.74269248744247, 1);
-    camera.lookAt({x: 926.2832753173957, y: -124.74269248744247, z: 1});
-    camera.up.set({x: 0, y: 1, z: 0});
-
-        // controls = new THREE.TrackballControls( camera );
-
-        // controls.rotateSpeed = 1.0;
-        // controls.zoomSpeed = 1.2;
-        // controls.panSpeed = 0.8;
-
-        // controls.noZoom = false;
-        // controls.noPan = false;
-
-        // controls.staticMoving = true;
-        // controls.dynamicDampingFactor = 0.3;
-
-        // controls.keys = [ 65, 83, 68 ];
+  
+    camera.position.x = 4;
+    camera.position.y = 25;
+    camera.position.z = 300;
+    // camera.lookAt({x: 15, y: 30, z: 0});
 
 
+    controls = new THREE.TrackballControls( camera, renderer.domElement, new THREE.Vector3().set(4, 25, 0));
 
-    korea_countries = new WY.models.GeoJSONCountries({
+    controls.rotateSpeed = 1.0;
+    controls.zoomSpeed = 1.2;
+    controls.panSpeed = 0.8;
+
+    controls.noZoom = false;
+    controls.noPan = false;
+
+    controls.staticMoving = true;
+    controls.dynamicDampingFactor = 0.3;
+    controls.noRotate = true;
+
+    controls.keys = [ 65, 83, 68 ];
+
+    var korea_countries = new WY.models.GeoJSONCountries({
       geojson: korea_geojson_data
     });
 
     korea_countries.init();
     scene.add(korea_countries);
     
-     // TweenMax.to(camera.position, 10, {y: "+=3"});
 
+
+    var world_countries = new WY.models.GeoJSONCountries({
+      geojson: world_geojson_data
+    });
+
+    world_countries.init();
+    scene.add(world_countries);
+    
+     // TweenMax.to(camera.position, 10, {y: "+=3"});
+    
   }
 
   function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-    // controls.update();
+    controls.update();
   }
 
   return practice_02_view;

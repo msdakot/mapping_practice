@@ -1,10 +1,5 @@
 class WelcomeController < ApplicationController 
   def index
-  end
-
-  def practice_02
-  end
-
-  def practice_03
+    redirect_to map_root_path
   end
 end

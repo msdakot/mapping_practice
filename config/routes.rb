@@ -3,8 +3,25 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get '/practice_02', :to => 'welcome#practice_02'
-  get '/practice_03', :to => 'welcome#practice_03'
+  namespace :map do 
+    get '/practice_02', :to => 'map#practice_02'
+    get '/practice_03', :to => 'map#practice_03'
+    get '/practice_04', :to => 'map#practice_04'
+    get '/practice_05', :to => 'map#practice_05'
+    get '/practice_06', :to => 'map#practice_06'
+    get '/practice_07', :to => 'map#practice_07'
+    root :to => 'map#index'
+  end
+
+  namespace :d3 do 
+    get '/practice_02', :to => 'd3#practice_02'
+    get '/practice_03', :to => 'd3#practice_03'
+    get '/practice_04', :to => 'd3#practice_04'
+    get '/practice_05', :to => 'd3#practice_05'
+    root :to => 'd3#index'
+  end
+
+
   root 'welcome#index'
 
 

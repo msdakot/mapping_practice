@@ -17,3 +17,29 @@
     }
   }
 }
+
+.svg_area {
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text{
+  font-family: sans-serif;
+  font-size:11px;
+}
+
+.refresh_area {
+  position:absolute;
+  left:50%;
+  margin-left: -30px;
+  top: 30px;
+
+}

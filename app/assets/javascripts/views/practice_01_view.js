@@ -43,7 +43,7 @@ WY.views.practice_01_view = (function(){
     var screen_height = $(window).height()-5;
 
     renderer.setSize(screen_width, screen_height);
-    renderer.setViewport(0, 0, screen_width * devicePixelRatio, screen_height * devicePixelRatio);
+    // renderer.setViewport(0, 0, screen_width * devicePixelRatio, screen_height * devicePixelRatio);
 
     $(renderer.domElement).width(screen_width);
     $(renderer.domElement).height(screen_height);
