@@ -21,4 +21,7 @@ class Map::MapController < ApplicationController
 
   def practice_07
   end
+
+  def practice_08
+  end
 end

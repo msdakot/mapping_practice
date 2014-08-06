@@ -22,5 +22,6 @@
 //= require ./vendor/TweenMax.min.js
 //= require ./vendor/TimelineMax.min.js
 //= require WY.js
+//= require utils.js
 //= require_directory ./models
 //= require_directory ./views

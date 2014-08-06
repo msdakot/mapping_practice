@@ -1,17 +1,17 @@
-WY.views.practice_07_view = (function(){
+var camera, scnee;
+WY.views.practice_08_view = (function(){
   var marker_data,
       world_geojson_data,
       renderer,
-      scene,
-      camera,
+      // scene,
+      // camera,
       controls,
       projector,
       raycaster,
-      mouse = new THREE.Vector2(), INTERSECTED;
+      mouse = new THREE.Vector2(), INTERSECTED, CLICK_INTERSECTED, mousedowned = false;
 
 
-  function practice_07_view(){
-    console.log("dwerilu2349u239");
+  function practice_08_view(){
     load_shader();
   }
 
@@ -126,8 +126,23 @@ WY.views.practice_07_view = (function(){
     projector = new THREE.Projector();
     raycaster = new THREE.Raycaster();
 
+    $(renderer.domElement).mousedown(onDocumentMouseDown);
+
+    document.addEventListener( 'mouseup', onDocumentMouseUp, false );
     document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
+
+
+  }
+
+  function onDocumentMouseUp(event){
+    mousedowned = false;
+    if ( CLICK_INTERSECTED ) {
+
+          CLICK_INTERSECTED.set_mouse_out();
+
+        }
+        CLICK_INTERSECTED = null;
   }
 
   function onDocumentMouseMove( event ) {
@@ -136,6 +151,87 @@ WY.views.practice_07_view = (function(){
 
       mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
       mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+      if (!mousedowned){
+       var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
+          projector.unprojectVector( vector, camera );
+
+          raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
+
+          var intersects = raycaster.intersectObjects( scene.children, true );
+
+          if ( intersects.length > 0 ) {
+
+            if ( INTERSECTED != intersects[ 0 ].object ) {
+
+              if ( INTERSECTED ) {
+                INTERSECTED.set_mouse_out();
+
+              }
+              INTERSECTED = intersects[ 0 ].object;
+              INTERSECTED.set_mouse_over();
+              console.log("mouse over");
+
+            }
+
+          } else {
+
+            if ( INTERSECTED ) {
+
+              INTERSECTED.set_mouse_out();
+
+            }
+            INTERSECTED = null;
+              // console.log("mouse out");
+          }
+      }
+        
+  }
+
+  function onDocumentMouseDown( event ) {
+      mousedowned = true;
+      // event.preventDefault();
+      
+
+      mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+      mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+
+      var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
+      projector.unprojectVector( vector, camera );
+
+      raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
+
+      var intersects = raycaster.intersectObjects( scene.children, true );
+
+      if ( intersects.length > 0 ) {
+
+        if ( CLICK_INTERSECTED != intersects[ 0 ].object ) {
+
+          if ( CLICK_INTERSECTED ) {
+            CLICK_INTERSECTED.set_mouse_out();
+
+          }
+          CLICK_INTERSECTED = intersects[ 0 ].object;
+          CLICK_INTERSECTED.set_mouse_click();
+
+          
+          camera.position.x = CLICK_INTERSECTED.geometry.boundingBox.center().x;
+          camera.position.y = CLICK_INTERSECTED.geometry.boundingBox.center().y;
+          camera.position.z = 200;
+          camera.lookAt(CLICK_INTERSECTED.geometry.boundingBox.center());
+
+        }
+
+      } else {
+
+        if ( CLICK_INTERSECTED ) {
+
+          CLICK_INTERSECTED.set_mouse_out();
+
+        }
+        CLICK_INTERSECTED = null;
+      }
   }
 
 
@@ -143,43 +239,8 @@ WY.views.practice_07_view = (function(){
   function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-
-    var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
-    projector.unprojectVector( vector, camera );
-
-    raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
-
-    var intersects = raycaster.intersectObjects( scene.children, true );
-
-    if ( intersects.length > 0 ) {
-
-      if ( INTERSECTED != intersects[ 0 ].object ) {
-
-        if ( INTERSECTED ) {
-          INTERSECTED.set_mouse_out();
-
-        }
-        INTERSECTED = intersects[ 0 ].object;
-        INTERSECTED.set_mouse_over();
-        // console.log("mouse over");
-
-      }
-
-    } else {
-
-      if ( INTERSECTED ) {
-
-        INTERSECTED.set_mouse_out();
-
-      }
-      INTERSECTED = null;
-        // console.log("mouse out");
-    }
-
-
-
-    controls.update();
+    // controls.update();
   }
 
-  return practice_07_view;
+  return practice_08_view;
 })();

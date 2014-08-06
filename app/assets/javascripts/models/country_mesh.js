@@ -30,7 +30,7 @@ WY.models.CountryMesh = (function(){
   CountryMesh.prototype = Object.create( THREE.Mesh.prototype );
 
   CountryMesh.prototype.init = function(){
-
+    this.geometry.computeBoundingBox();
     _.each(this.geometry.vertices, _.bind(function(vertex, i){
       this.attributes.customColor.value.push(this.color.clone());
     }, this));
@@ -40,6 +40,13 @@ WY.models.CountryMesh = (function(){
   };
 
   CountryMesh.prototype.set_mouse_over = function(){
+    _.each(this.attributes.customColor.value, _.bind(function(color_value){
+      color_value.setRGB(0.5, 0.5, 0);
+    }, this));
+    this.attributes.customColor.needsUpdate = true;
+  }
+
+  CountryMesh.prototype.set_mouse_click = function(){
     _.each(this.attributes.customColor.value, _.bind(function(color_value){
       color_value.setRGB(1, 0, 0);
     }, this));
