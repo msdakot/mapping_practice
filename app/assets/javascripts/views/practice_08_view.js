@@ -170,7 +170,7 @@ WY.views.practice_08_view = (function(){
               }
               INTERSECTED = intersects[ 0 ].object;
               INTERSECTED.set_mouse_over();
-              console.log("mouse over");
+              // console.log("mouse over");
 
             }
 
@@ -214,13 +214,9 @@ WY.views.practice_08_view = (function(){
           }
           CLICK_INTERSECTED = intersects[ 0 ].object;
           CLICK_INTERSECTED.set_mouse_click();
-
           
-          camera.position.x = CLICK_INTERSECTED.geometry.boundingBox.center().x;
-          camera.position.y = CLICK_INTERSECTED.geometry.boundingBox.center().y;
-          camera.position.z = 200;
-          camera.lookAt(CLICK_INTERSECTED.geometry.boundingBox.center());
-
+          controls.lookAtObject(CLICK_INTERSECTED);
+          
         }
 
       } else {
@@ -239,7 +235,7 @@ WY.views.practice_08_view = (function(){
   function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
-    // controls.update();
+    controls.update();
   }
 
   return practice_08_view;
