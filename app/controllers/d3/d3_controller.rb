@@ -14,4 +14,7 @@ class D3::D3Controller < ApplicationController
 
   def practice_05
   end
+
+  def practice_06
+  end
 end

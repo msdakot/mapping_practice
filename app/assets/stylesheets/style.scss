@@ -43,3 +43,46 @@
   top: 30px;
 
 }
+
+.tooltip {
+  background-color:white;
+  padding:20px;
+  color:black;
+  line-height:1.8;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  padding: 0px 0px;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+#css-world {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  position: absolute; }
+
+#css-camera {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  position: absolute; }
+
+#css-container {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow:hidden;
+  position: absolute; }

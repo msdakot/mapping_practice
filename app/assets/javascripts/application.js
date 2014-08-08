@@ -25,3 +25,4 @@
 //= require utils.js
 //= require_directory ./models
 //= require_directory ./views
+//= require_directory ./templates

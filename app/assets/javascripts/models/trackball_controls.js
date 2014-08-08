@@ -2,6 +2,7 @@
  * @author Eberhard Graether / http://egraether.com/
  * @author Mark Lundin  / http://mark-lundin.com
  */
+var trackballmouse = new THREE.Vector2();
 
 THREE.TrackballControls = function ( object, domElement, _target ) {
 
@@ -50,8 +51,8 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
   _rotateStart = new THREE.Vector3(),
   _rotateEnd = new THREE.Vector3(),
 
-  _zoomStart = new THREE.Vector2(),
-  _zoomEnd = new THREE.Vector2(),
+  _zoomStart = new THREE.Vector3(),
+  _zoomEnd = new THREE.Vector3(),
 
   _touchZoomDistanceStart = 0,
   _touchZoomDistanceEnd = 0,
@@ -214,7 +215,6 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
   }());
 
   this.zoomCamera = function () {
-
     if ( _state === STATE.TOUCH_ZOOM_PAN ) {
 
       var factor = _touchZoomDistanceStart / _touchZoomDistanceEnd;
@@ -223,21 +223,29 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
 
     } else {
 
-      var factor = 1.0 + ( _zoomEnd.y - _zoomStart.y ) * _this.zoomSpeed;
+      var factorX = 1.0 + ( _zoomEnd.x - _zoomStart.x ) * _this.zoomSpeed;
+      var factorY = 1.0 + ( _zoomEnd.y - _zoomStart.y ) * _this.zoomSpeed;
+      var factorZ = 1.0 + ( _zoomEnd.z - _zoomStart.z ) * _this.zoomSpeed;
+      var factor = new THREE.Vector3(factorX, factorY, factorZ);
+      // console.log(factor);
+      if ( factor.length() !== 1.0 && factor.length() > 0.0 ) {
 
-      if ( factor !== 1.0 && factor > 0.0 ) {
+        _eye.multiply( factor );
 
-        _eye.multiplyScalar( factor );
+        // vector3ToString(factor);
+        // _eye.add(trackballmouse);
 
-        if ( _this.staticMoving ) {
+        // if ( _this.staticMoving ) {
 
-          _zoomStart.copy( _zoomEnd );
+        //   _zoomStart.copy( _zoomEnd );
 
-        } else {
+        // } else {
 
+          _zoomStart.x += ( _zoomEnd.x - _zoomStart.x ) * this.dynamicDampingFactor;
           _zoomStart.y += ( _zoomEnd.y - _zoomStart.y ) * this.dynamicDampingFactor;
+          _zoomStart.z += ( _zoomEnd.z - _zoomStart.z ) * this.dynamicDampingFactor;
 
-        }
+        // }
 
       }
 
@@ -330,6 +338,7 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
 
   this.update = function () {
 
+
     _eye.subVectors( _this.object.position, _this.target );
 
     if ( !_this.noRotate ) {
@@ -341,7 +350,6 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
     if ( !_this.noZoom ) {
 
       _this.zoomCamera();
-
     }
 
     if ( !_this.noPan ) {
@@ -354,10 +362,11 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
 
     _this.checkDistances();
 
+    // this.object.position.x = _zoomStart.x;
+    // this.object.position.y = _zoomStart.y;
+    // this.target.x = _zoomStart.x;
+    // this.target.y = _zoomStart.y;
 
-    _this.object.lookAt( _this.target );
-
-    _this.object.position.x = _this.target.x;
 
 
     if ( lastPosition.distanceToSquared( _this.object.position ) > EPS ) {
@@ -523,7 +532,20 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
 
     }
 
-    _zoomStart.y += delta * 0.01;
+    _zoomStart.z += delta * 0.01;
+
+    trackballmouse = getMouseOnScreen(event.pageX, event.pageY);
+    _zoomStart.x = trackballmouse.x;
+    _zoomStart.y = trackballmouse.y;
+  
+    // _this.object.position.x = trackballmouse.x;
+    // _this.object.position.y = trackballmouse.y;
+    
+    // _this.target.x = trackballmouse.x;
+    // _this.target.y = trackballmouse.y;
+
+    vector3ToString(_zoomStart);
+
     _this.dispatchEvent( startEvent );
     _this.dispatchEvent( endEvent );
 
@@ -622,7 +644,6 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
   this.domElement.addEventListener( 'contextmenu', function ( event ) { event.preventDefault(); }, false );
 
   this.domElement.addEventListener( 'mousedown', mousedown, false );
-
   this.domElement.addEventListener( 'mousewheel', mousewheel, false );
   this.domElement.addEventListener( 'DOMMouseScroll', mousewheel, false ); // firefox
 

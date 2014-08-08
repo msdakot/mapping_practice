@@ -8,8 +8,9 @@ WY.views.practice_08_view = (function(){
       controls,
       projector,
       raycaster,
+      tooltip,
       mouse = new THREE.Vector2(), INTERSECTED, CLICK_INTERSECTED, mousedowned = false;
-
+      
 
   function practice_08_view(){
     load_shader();
@@ -67,7 +68,8 @@ WY.views.practice_08_view = (function(){
     renderer.sortObjects = false;
     renderer.generateMipmaps = false;
 
-    $("body").append($(renderer.domElement));
+    document.getElementById('glContainer').appendChild( renderer.domElement );
+
 
     renderer.setClearColor(0x000000, 1);
     renderer.clear();
@@ -131,6 +133,9 @@ WY.views.practice_08_view = (function(){
     document.addEventListener( 'mouseup', onDocumentMouseUp, false );
     document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
+    tooltip = new WY.models.Tooltip();
+    tooltip.init();
+    tooltip.hide();
 
 
   }
@@ -152,6 +157,8 @@ WY.views.practice_08_view = (function(){
       mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
       mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
+      tooltip.update(event);
+
       if (!mousedowned){
        var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
           projector.unprojectVector( vector, camera );
@@ -166,10 +173,10 @@ WY.views.practice_08_view = (function(){
 
               if ( INTERSECTED ) {
                 INTERSECTED.set_mouse_out();
-
               }
               INTERSECTED = intersects[ 0 ].object;
               INTERSECTED.set_mouse_over();
+              tooltip.show();
               // console.log("mouse over");
 
             }
@@ -182,6 +189,7 @@ WY.views.practice_08_view = (function(){
 
             }
             INTERSECTED = null;
+            tooltip.hide();
               // console.log("mouse out");
           }
       }
@@ -237,6 +245,7 @@ WY.views.practice_08_view = (function(){
     renderer.render(scene, camera);
     controls.update();
   }
+
 
   return practice_08_view;
 })();
