@@ -1,4 +1,4 @@
-set :application, "leesora.wonyoung.so"
+set :application, "mapping.wonyoung.so"
 set :user, "deployer"
 
 set :unicorn_user, "deployer"
