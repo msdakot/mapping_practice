@@ -80,6 +80,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
+    non-stupid-digest-assets (1.0.4)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -160,6 +161,7 @@ DEPENDENCIES
   ejs
   jbuilder (~> 2.0)
   jquery-rails
+  non-stupid-digest-assets
   pg
   rails (= 4.1.4)
   sass-rails (~> 4.0.3)
