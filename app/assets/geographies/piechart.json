@@ -1,0 +1,4932 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 28400000,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "AFG",
+            "name": "Afghanistan",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 36
+            }, {
+                "name": "Sample 2",
+                "value": 79
+            }, {
+                "name": "Sample 3",
+                "value": 26
+            }, {
+                "name": "Sample 4",
+                "value": 81
+            }],
+            "value": 32
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 12799293,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 1,
+            "iso_a3": "AGO",
+            "name": "Angola",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 37
+            }, {
+                "name": "Sample 2",
+                "value": 80
+            }, {
+                "name": "Sample 3",
+                "value": 95
+            }, {
+                "name": "Sample 4",
+                "value": 62
+            }],
+            "value": 92
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 3639453,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "ALB",
+            "name": "Albania",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 13
+            }, {
+                "name": "Sample 2",
+                "value": 101
+            }, {
+                "name": "Sample 3",
+                "value": 88
+            }, {
+                "name": "Sample 4",
+                "value": 36
+            }],
+            "value": 29
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 4798491,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "ARE",
+            "name": "United Arab Emirates",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 109
+            }, {
+                "name": "Sample 2",
+                "value": 98
+            }, {
+                "name": "Sample 3",
+                "value": 30
+            }, {
+                "name": "Sample 4",
+                "value": 49
+            }],
+            "value": 39
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 40913584,
+            "mapcolor7": 3,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 13,
+            "iso_a3": "ARG",
+            "name": "Argentina",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 107
+            }, {
+                "name": "Sample 2",
+                "value": 43
+            }, {
+                "name": "Sample 3",
+                "value": 101
+            }, {
+                "name": "Sample 4",
+                "value": 80
+            }],
+            "value": 16
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 2967004,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 10,
+            "iso_a3": "ARM",
+            "name": "Armenia",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 37
+            }, {
+                "name": "Sample 2",
+                "value": 45
+            }, {
+                "name": "Sample 3",
+                "value": 86
+            }, {
+                "name": "Sample 4",
+                "value": 38
+            }],
+            "value": 101
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 140,
+            "mapcolor7": 7,
+            "continent": "Seven seas (open ocean)",
+            "economy": "6. Developing region",
+            "mapcolor13": 11,
+            "iso_a3": "ATF",
+            "name": "Fr. S. Antarctic Lands",
+            "mapcolor9": 9,
+            "data": [{
+                "name": "Sample 1",
+                "value": 98
+            }, {
+                "name": "Sample 2",
+                "value": 38
+            }, {
+                "name": "Sample 3",
+                "value": 50
+            }, {
+                "name": "Sample 4",
+                "value": 17
+            }],
+            "value": 104
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 21262641,
+            "mapcolor7": 1,
+            "continent": "Oceania",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 7,
+            "iso_a3": "AUS",
+            "name": "Australia",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 94
+            }, {
+                "name": "Sample 2",
+                "value": 86
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 93
+            }],
+            "value": 105
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 8210281,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 4,
+            "iso_a3": "AUT",
+            "name": "Austria",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 70
+            }, {
+                "name": "Sample 2",
+                "value": 87
+            }, {
+                "name": "Sample 3",
+                "value": 44
+            }, {
+                "name": "Sample 4",
+                "value": 71
+            }],
+            "value": 96
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 8238672,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 8,
+            "iso_a3": "AZE",
+            "name": "Azerbaijan",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 14
+            }, {
+                "name": "Sample 2",
+                "value": 31
+            }, {
+                "name": "Sample 3",
+                "value": 107
+            }, {
+                "name": "Sample 4",
+                "value": 36
+            }],
+            "value": 87
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 8988091,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "BDI",
+            "name": "Burundi",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 83
+            }, {
+                "name": "Sample 2",
+                "value": 83
+            }, {
+                "name": "Sample 3",
+                "value": 32
+            }, {
+                "name": "Sample 4",
+                "value": 57
+            }],
+            "value": 99
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 10414336,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 8,
+            "iso_a3": "BEL",
+            "name": "Belgium",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 75
+            }, {
+                "name": "Sample 2",
+                "value": 16
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 105
+            }],
+            "value": 20
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 8791832,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 12,
+            "iso_a3": "BEN",
+            "name": "Benin",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 66
+            }, {
+                "name": "Sample 2",
+                "value": 103
+            }, {
+                "name": "Sample 3",
+                "value": 79
+            }, {
+                "name": "Sample 4",
+                "value": 67
+            }],
+            "value": 15
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 15746232,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 11,
+            "iso_a3": "BFA",
+            "name": "Burkina Faso",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 70
+            }, {
+                "name": "Sample 2",
+                "value": 35
+            }, {
+                "name": "Sample 3",
+                "value": 23
+            }, {
+                "name": "Sample 4",
+                "value": 64
+            }],
+            "value": 41
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 156050883,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "BGD",
+            "name": "Bangladesh",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 43
+            }, {
+                "name": "Sample 2",
+                "value": 94
+            }, {
+                "name": "Sample 3",
+                "value": 64
+            }, {
+                "name": "Sample 4",
+                "value": 31
+            }],
+            "value": 62
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 7204687,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 8,
+            "iso_a3": "BGR",
+            "name": "Bulgaria",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 52
+            }, {
+                "name": "Sample 2",
+                "value": 51
+            }, {
+                "name": "Sample 3",
+                "value": 101
+            }, {
+                "name": "Sample 4",
+                "value": 59
+            }],
+            "value": 75
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 309156,
+            "mapcolor7": 1,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "BHS",
+            "name": "Bahamas",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 49
+            }, {
+                "name": "Sample 2",
+                "value": 27
+            }, {
+                "name": "Sample 3",
+                "value": 105
+            }, {
+                "name": "Sample 4",
+                "value": 73
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 4613414,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "BIH",
+            "name": "Bosnia and Herz.",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 50
+            }, {
+                "name": "Sample 2",
+                "value": 76
+            }, {
+                "name": "Sample 3",
+                "value": 84
+            }, {
+                "name": "Sample 4",
+                "value": 47
+            }],
+            "value": 32
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 9648533,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 11,
+            "iso_a3": "BLR",
+            "name": "Belarus",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 107
+            }, {
+                "name": "Sample 2",
+                "value": 33
+            }, {
+                "name": "Sample 3",
+                "value": 61
+            }, {
+                "name": "Sample 4",
+                "value": 24
+            }],
+            "value": 42
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 307899,
+            "mapcolor7": 1,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 7,
+            "iso_a3": "BLZ",
+            "name": "Belize",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 13
+            }, {
+                "name": "Sample 3",
+                "value": 94
+            }, {
+                "name": "Sample 4",
+                "value": 16
+            }],
+            "value": 45
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 9775246,
+            "mapcolor7": 1,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 3,
+            "iso_a3": "BOL",
+            "name": "Bolivia",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 53
+            }, {
+                "name": "Sample 2",
+                "value": 96
+            }, {
+                "name": "Sample 3",
+                "value": 38
+            }, {
+                "name": "Sample 4",
+                "value": 34
+            }],
+            "value": 89
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 198739269,
+            "mapcolor7": 5,
+            "continent": "South America",
+            "economy": "3. Emerging region: BRIC",
+            "mapcolor13": 7,
+            "iso_a3": "BRA",
+            "name": "Brazil",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 60
+            }, {
+                "name": "Sample 2",
+                "value": 34
+            }, {
+                "name": "Sample 3",
+                "value": 103
+            }, {
+                "name": "Sample 4",
+                "value": 89
+            }],
+            "value": 73
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 388190,
+            "mapcolor7": 4,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 12,
+            "iso_a3": "BRN",
+            "name": "Brunei",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 78
+            }, {
+                "name": "Sample 2",
+                "value": 12
+            }, {
+                "name": "Sample 3",
+                "value": 43
+            }, {
+                "name": "Sample 4",
+                "value": 97
+            }],
+            "value": 93
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 691141,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "BTN",
+            "name": "Bhutan",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 54
+            }, {
+                "name": "Sample 2",
+                "value": 107
+            }, {
+                "name": "Sample 3",
+                "value": 15
+            }, {
+                "name": "Sample 4",
+                "value": 50
+            }],
+            "value": 61
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 1990876,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "BWA",
+            "name": "Botswana",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 95
+            }, {
+                "name": "Sample 2",
+                "value": 33
+            }, {
+                "name": "Sample 3",
+                "value": 101
+            }, {
+                "name": "Sample 4",
+                "value": 83
+            }],
+            "value": 44
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 4511488,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 9,
+            "iso_a3": "CAF",
+            "name": "Central African Rep.",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 84
+            }, {
+                "name": "Sample 2",
+                "value": 13
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 39
+            }],
+            "value": 33
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 33487208,
+            "mapcolor7": 6,
+            "continent": "North America",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 2,
+            "iso_a3": "CAN",
+            "name": "Canada",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 107
+            }, {
+                "name": "Sample 2",
+                "value": 28
+            }, {
+                "name": "Sample 3",
+                "value": 102
+            }, {
+                "name": "Sample 4",
+                "value": 109
+            }],
+            "value": 22
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 7604467,
+            "mapcolor7": 5,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 3,
+            "iso_a3": "CHE",
+            "name": "Switzerland",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 37
+            }, {
+                "name": "Sample 3",
+                "value": 74
+            }, {
+                "name": "Sample 4",
+                "value": 61
+            }],
+            "value": 44
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 16601707,
+            "mapcolor7": 5,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 9,
+            "iso_a3": "CHL",
+            "name": "Chile",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 23
+            }, {
+                "name": "Sample 2",
+                "value": 10
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 97
+            }],
+            "value": 45
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 1338612970,
+            "mapcolor7": 4,
+            "continent": "Asia",
+            "economy": "3. Emerging region: BRIC",
+            "mapcolor13": 3,
+            "iso_a3": "CHN",
+            "name": "China",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 47
+            }, {
+                "name": "Sample 2",
+                "value": 11
+            }, {
+                "name": "Sample 3",
+                "value": 46
+            }, {
+                "name": "Sample 4",
+                "value": 29
+            }],
+            "value": 63
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 20617068,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "CIV",
+            "name": "C�te d'Ivoire",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 85
+            }, {
+                "name": "Sample 2",
+                "value": 85
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 41
+            }],
+            "value": 81
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 18879301,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "CMR",
+            "name": "Cameroon",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 29
+            }, {
+                "name": "Sample 2",
+                "value": 21
+            }, {
+                "name": "Sample 3",
+                "value": 99
+            }, {
+                "name": "Sample 4",
+                "value": 75
+            }],
+            "value": 26
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 68692542,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "COD",
+            "name": "Dem. Rep. Congo",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 95
+            }, {
+                "name": "Sample 2",
+                "value": 11
+            }, {
+                "name": "Sample 3",
+                "value": 70
+            }, {
+                "name": "Sample 4",
+                "value": 42
+            }],
+            "value": 53
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 4012809,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 10,
+            "iso_a3": "COG",
+            "name": "Congo",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 40
+            }, {
+                "name": "Sample 2",
+                "value": 93
+            }, {
+                "name": "Sample 3",
+                "value": 39
+            }, {
+                "name": "Sample 4",
+                "value": 79
+            }],
+            "value": 91
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 45644023,
+            "mapcolor7": 2,
+            "continent": "South America",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "COL",
+            "name": "Colombia",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 44
+            }, {
+                "name": "Sample 2",
+                "value": 95
+            }, {
+                "name": "Sample 3",
+                "value": 50
+            }, {
+                "name": "Sample 4",
+                "value": 78
+            }],
+            "value": 68
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 4253877,
+            "mapcolor7": 3,
+            "continent": "North America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 2,
+            "iso_a3": "CRI",
+            "name": "Costa Rica",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 87
+            }, {
+                "name": "Sample 2",
+                "value": 20
+            }, {
+                "name": "Sample 3",
+                "value": 30
+            }, {
+                "name": "Sample 4",
+                "value": 35
+            }],
+            "value": 81
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 11451652,
+            "mapcolor7": 3,
+            "continent": "North America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 4,
+            "iso_a3": "CUB",
+            "name": "Cuba",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 67
+            }, {
+                "name": "Sample 2",
+                "value": 55
+            }, {
+                "name": "Sample 3",
+                "value": 32
+            }, {
+                "name": "Sample 4",
+                "value": 88
+            }],
+            "value": 83
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 265100,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 8,
+            "iso_a3": "-99",
+            "name": "N. Cyprus",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 50
+            }, {
+                "name": "Sample 2",
+                "value": 96
+            }, {
+                "name": "Sample 3",
+                "value": 59
+            }, {
+                "name": "Sample 4",
+                "value": 83
+            }],
+            "value": 86
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 531640,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 7,
+            "iso_a3": "CYP",
+            "name": "Cyprus",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 90
+            }, {
+                "name": "Sample 2",
+                "value": 51
+            }, {
+                "name": "Sample 3",
+                "value": 64
+            }, {
+                "name": "Sample 4",
+                "value": 74
+            }],
+            "value": 45
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 10211904,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 6,
+            "iso_a3": "CZE",
+            "name": "Czech Rep.",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 30
+            }, {
+                "name": "Sample 2",
+                "value": 93
+            }, {
+                "name": "Sample 3",
+                "value": 79
+            }, {
+                "name": "Sample 4",
+                "value": 78
+            }],
+            "value": 107
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 82329758,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 1,
+            "iso_a3": "DEU",
+            "name": "Germany",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 75
+            }, {
+                "name": "Sample 2",
+                "value": 97
+            }, {
+                "name": "Sample 3",
+                "value": 92
+            }, {
+                "name": "Sample 4",
+                "value": 74
+            }],
+            "value": 24
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 516055,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "DJI",
+            "name": "Djibouti",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 109
+            }, {
+                "name": "Sample 2",
+                "value": 69
+            }, {
+                "name": "Sample 3",
+                "value": 33
+            }, {
+                "name": "Sample 4",
+                "value": 34
+            }],
+            "value": 24
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 5500510,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 12,
+            "iso_a3": "DNK",
+            "name": "Denmark",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 22
+            }, {
+                "name": "Sample 2",
+                "value": 44
+            }, {
+                "name": "Sample 3",
+                "value": 73
+            }, {
+                "name": "Sample 4",
+                "value": 107
+            }],
+            "value": 32
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 9650054,
+            "mapcolor7": 5,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 7,
+            "iso_a3": "DOM",
+            "name": "Dominican Rep.",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 12
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 78
+            }],
+            "value": 82
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 34178188,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "DZA",
+            "name": "Algeria",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 13
+            }, {
+                "name": "Sample 2",
+                "value": 43
+            }, {
+                "name": "Sample 3",
+                "value": 18
+            }, {
+                "name": "Sample 4",
+                "value": 97
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 14573101,
+            "mapcolor7": 1,
+            "continent": "South America",
+            "economy": "6. Developing region",
+            "mapcolor13": 12,
+            "iso_a3": "ECU",
+            "name": "Ecuador",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 52
+            }, {
+                "name": "Sample 2",
+                "value": 54
+            }, {
+                "name": "Sample 3",
+                "value": 44
+            }, {
+                "name": "Sample 4",
+                "value": 69
+            }],
+            "value": 77
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 83082869,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 2,
+            "iso_a3": "EGY",
+            "name": "Egypt",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 54
+            }, {
+                "name": "Sample 2",
+                "value": 109
+            }, {
+                "name": "Sample 3",
+                "value": 55
+            }, {
+                "name": "Sample 4",
+                "value": 89
+            }],
+            "value": 64
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 5647168,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 12,
+            "iso_a3": "ERI",
+            "name": "Eritrea",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 69
+            }, {
+                "name": "Sample 2",
+                "value": 55
+            }, {
+                "name": "Sample 3",
+                "value": 41
+            }, {
+                "name": "Sample 4",
+                "value": 89
+            }],
+            "value": 106
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 40525002,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 5,
+            "iso_a3": "ESP",
+            "name": "Spain",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 65
+            }, {
+                "name": "Sample 2",
+                "value": 81
+            }, {
+                "name": "Sample 3",
+                "value": 21
+            }, {
+                "name": "Sample 4",
+                "value": 22
+            }],
+            "value": 31
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 1299371,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 10,
+            "iso_a3": "EST",
+            "name": "Estonia",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 47
+            }, {
+                "name": "Sample 2",
+                "value": 39
+            }, {
+                "name": "Sample 3",
+                "value": 28
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 47
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 85237338,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 13,
+            "iso_a3": "ETH",
+            "name": "Ethiopia",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 23
+            }, {
+                "name": "Sample 2",
+                "value": 88
+            }, {
+                "name": "Sample 3",
+                "value": 69
+            }, {
+                "name": "Sample 4",
+                "value": 59
+            }],
+            "value": 33
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 5250275,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 6,
+            "iso_a3": "FIN",
+            "name": "Finland",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 79
+            }, {
+                "name": "Sample 2",
+                "value": 35
+            }, {
+                "name": "Sample 3",
+                "value": 71
+            }, {
+                "name": "Sample 4",
+                "value": 42
+            }],
+            "value": 88
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 944720,
+            "mapcolor7": 5,
+            "continent": "Oceania",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "FJI",
+            "name": "Fiji",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 41
+            }, {
+                "name": "Sample 2",
+                "value": 67
+            }, {
+                "name": "Sample 3",
+                "value": 84
+            }, {
+                "name": "Sample 4",
+                "value": 88
+            }],
+            "value": 99
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 3140,
+            "mapcolor7": 6,
+            "continent": "South America",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 3,
+            "iso_a3": "FLK",
+            "name": "Falkland Is.",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 97
+            }, {
+                "name": "Sample 2",
+                "value": 90
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 21
+            }],
+            "value": 90
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 64057792,
+            "mapcolor7": 7,
+            "continent": "Europe",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 11,
+            "iso_a3": "FRA",
+            "name": "France",
+            "mapcolor9": 9,
+            "data": [{
+                "name": "Sample 1",
+                "value": 38
+            }, {
+                "name": "Sample 2",
+                "value": 28
+            }, {
+                "name": "Sample 3",
+                "value": 88
+            }, {
+                "name": "Sample 4",
+                "value": 80
+            }],
+            "value": 24
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 1514993,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "GAB",
+            "name": "Gabon",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 87
+            }, {
+                "name": "Sample 2",
+                "value": 16
+            }, {
+                "name": "Sample 3",
+                "value": 95
+            }, {
+                "name": "Sample 4",
+                "value": 37
+            }],
+            "value": 82
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 62262000,
+            "mapcolor7": 6,
+            "continent": "Europe",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 3,
+            "iso_a3": "GBR",
+            "name": "United Kingdom",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 71
+            }, {
+                "name": "Sample 2",
+                "value": 80
+            }, {
+                "name": "Sample 3",
+                "value": 100
+            }, {
+                "name": "Sample 4",
+                "value": 105
+            }],
+            "value": 90
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 4615807,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "GEO",
+            "name": "Georgia",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 31
+            }, {
+                "name": "Sample 2",
+                "value": 85
+            }, {
+                "name": "Sample 3",
+                "value": 58
+            }, {
+                "name": "Sample 4",
+                "value": 78
+            }],
+            "value": 74
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 23832495,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 4,
+            "iso_a3": "GHA",
+            "name": "Ghana",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 16
+            }, {
+                "name": "Sample 2",
+                "value": 104
+            }, {
+                "name": "Sample 3",
+                "value": 87
+            }, {
+                "name": "Sample 4",
+                "value": 60
+            }],
+            "value": 70
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 10057975,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 2,
+            "iso_a3": "GIN",
+            "name": "Guinea",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 63
+            }, {
+                "name": "Sample 2",
+                "value": 93
+            }, {
+                "name": "Sample 3",
+                "value": 16
+            }, {
+                "name": "Sample 4",
+                "value": 26
+            }],
+            "value": 103
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 1782893,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "GMB",
+            "name": "Gambia",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 39
+            }, {
+                "name": "Sample 2",
+                "value": 84
+            }, {
+                "name": "Sample 3",
+                "value": 17
+            }, {
+                "name": "Sample 4",
+                "value": 62
+            }],
+            "value": 10
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 1533964,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 4,
+            "iso_a3": "GNB",
+            "name": "Guinea-Bissau",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 67
+            }, {
+                "name": "Sample 2",
+                "value": 41
+            }, {
+                "name": "Sample 3",
+                "value": 57
+            }, {
+                "name": "Sample 4",
+                "value": 93
+            }],
+            "value": 96
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 650702,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "GNQ",
+            "name": "Eq. Guinea",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 103
+            }, {
+                "name": "Sample 2",
+                "value": 99
+            }, {
+                "name": "Sample 3",
+                "value": 79
+            }, {
+                "name": "Sample 4",
+                "value": 73
+            }],
+            "value": 62
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 10737428,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "GRC",
+            "name": "Greece",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 49
+            }, {
+                "name": "Sample 2",
+                "value": 67
+            }, {
+                "name": "Sample 3",
+                "value": 33
+            }, {
+                "name": "Sample 4",
+                "value": 52
+            }],
+            "value": 94
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 57600,
+            "mapcolor7": 4,
+            "continent": "North America",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 12,
+            "iso_a3": "GRL",
+            "name": "Greenland",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 70
+            }, {
+                "name": "Sample 2",
+                "value": 80
+            }, {
+                "name": "Sample 3",
+                "value": 91
+            }, {
+                "name": "Sample 4",
+                "value": 21
+            }],
+            "value": 37
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 13276517,
+            "mapcolor7": 3,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "GTM",
+            "name": "Guatemala",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 37
+            }, {
+                "name": "Sample 2",
+                "value": 41
+            }, {
+                "name": "Sample 3",
+                "value": 71
+            }, {
+                "name": "Sample 4",
+                "value": 50
+            }],
+            "value": 106
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 772298,
+            "mapcolor7": 3,
+            "continent": "South America",
+            "economy": "6. Developing region",
+            "mapcolor13": 8,
+            "iso_a3": "GUY",
+            "name": "Guyana",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 40
+            }, {
+                "name": "Sample 2",
+                "value": 15
+            }, {
+                "name": "Sample 3",
+                "value": 51
+            }, {
+                "name": "Sample 4",
+                "value": 16
+            }],
+            "value": 10
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 7792854,
+            "mapcolor7": 2,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "HND",
+            "name": "Honduras",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 72
+            }, {
+                "name": "Sample 2",
+                "value": 10
+            }, {
+                "name": "Sample 3",
+                "value": 86
+            }, {
+                "name": "Sample 4",
+                "value": 15
+            }],
+            "value": 52
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 4489409,
+            "mapcolor7": 5,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 1,
+            "iso_a3": "HRV",
+            "name": "Croatia",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 37
+            }, {
+                "name": "Sample 2",
+                "value": 74
+            }, {
+                "name": "Sample 3",
+                "value": 49
+            }, {
+                "name": "Sample 4",
+                "value": 91
+            }],
+            "value": 46
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 9035536,
+            "mapcolor7": 2,
+            "continent": "North America",
+            "economy": "7. Least developed region",
+            "mapcolor13": 2,
+            "iso_a3": "HTI",
+            "name": "Haiti",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 51
+            }, {
+                "name": "Sample 2",
+                "value": 14
+            }, {
+                "name": "Sample 3",
+                "value": 95
+            }, {
+                "name": "Sample 4",
+                "value": 75
+            }],
+            "value": 11
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 9905596,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 5,
+            "iso_a3": "HUN",
+            "name": "Hungary",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 22
+            }, {
+                "name": "Sample 2",
+                "value": 91
+            }, {
+                "name": "Sample 3",
+                "value": 62
+            }, {
+                "name": "Sample 4",
+                "value": 97
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 240271522,
+            "mapcolor7": 6,
+            "continent": "Asia",
+            "economy": "4. Emerging region: MIKT",
+            "mapcolor13": 11,
+            "iso_a3": "IDN",
+            "name": "Indonesia",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 47
+            }, {
+                "name": "Sample 2",
+                "value": 63
+            }, {
+                "name": "Sample 3",
+                "value": 87
+            }, {
+                "name": "Sample 4",
+                "value": 107
+            }],
+            "value": 95
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 1166079220,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "3. Emerging region: BRIC",
+            "mapcolor13": 2,
+            "iso_a3": "IND",
+            "name": "India",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 109
+            }, {
+                "name": "Sample 2",
+                "value": 13
+            }, {
+                "name": "Sample 3",
+                "value": 98
+            }, {
+                "name": "Sample 4",
+                "value": 62
+            }],
+            "value": 15
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 4203200,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 2,
+            "iso_a3": "IRL",
+            "name": "Ireland",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 69
+            }, {
+                "name": "Sample 2",
+                "value": 28
+            }, {
+                "name": "Sample 3",
+                "value": 63
+            }, {
+                "name": "Sample 4",
+                "value": 64
+            }],
+            "value": 71
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 66429284,
+            "mapcolor7": 4,
+            "continent": "Asia",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 13,
+            "iso_a3": "IRN",
+            "name": "Iran",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 21
+            }, {
+                "name": "Sample 2",
+                "value": 81
+            }, {
+                "name": "Sample 3",
+                "value": 82
+            }, {
+                "name": "Sample 4",
+                "value": 80
+            }],
+            "value": 86
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 31129225,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "IRQ",
+            "name": "Iraq",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 78
+            }, {
+                "name": "Sample 2",
+                "value": 108
+            }, {
+                "name": "Sample 3",
+                "value": 42
+            }, {
+                "name": "Sample 4",
+                "value": 41
+            }],
+            "value": 87
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 306694,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "ISL",
+            "name": "Iceland",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 93
+            }, {
+                "name": "Sample 2",
+                "value": 24
+            }, {
+                "name": "Sample 3",
+                "value": 99
+            }, {
+                "name": "Sample 4",
+                "value": 63
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 7233701,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "ISR",
+            "name": "Israel",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 66
+            }, {
+                "name": "Sample 2",
+                "value": 12
+            }, {
+                "name": "Sample 3",
+                "value": 68
+            }, {
+                "name": "Sample 4",
+                "value": 65
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 58126212,
+            "mapcolor7": 6,
+            "continent": "Europe",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 7,
+            "iso_a3": "ITA",
+            "name": "Italy",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 50
+            }, {
+                "name": "Sample 2",
+                "value": 28
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 39
+            }],
+            "value": 55
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 2825928,
+            "mapcolor7": 1,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 10,
+            "iso_a3": "JAM",
+            "name": "Jamaica",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 104
+            }, {
+                "name": "Sample 2",
+                "value": 57
+            }, {
+                "name": "Sample 3",
+                "value": 82
+            }, {
+                "name": "Sample 4",
+                "value": 55
+            }],
+            "value": 45
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 6342948,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 4,
+            "iso_a3": "JOR",
+            "name": "Jordan",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 57
+            }, {
+                "name": "Sample 2",
+                "value": 11
+            }, {
+                "name": "Sample 3",
+                "value": 17
+            }, {
+                "name": "Sample 4",
+                "value": 57
+            }],
+            "value": 53
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 127078679,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 4,
+            "iso_a3": "JPN",
+            "name": "Japan",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 54
+            }, {
+                "name": "Sample 2",
+                "value": 50
+            }, {
+                "name": "Sample 3",
+                "value": 104
+            }, {
+                "name": "Sample 4",
+                "value": 75
+            }],
+            "value": 18
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 15399437,
+            "mapcolor7": 6,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "KAZ",
+            "name": "Kazakhstan",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 53
+            }, {
+                "name": "Sample 2",
+                "value": 73
+            }, {
+                "name": "Sample 3",
+                "value": 92
+            }, {
+                "name": "Sample 4",
+                "value": 25
+            }],
+            "value": 44
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 39002772,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 3,
+            "iso_a3": "KEN",
+            "name": "Kenya",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 73
+            }, {
+                "name": "Sample 2",
+                "value": 62
+            }, {
+                "name": "Sample 3",
+                "value": 10
+            }, {
+                "name": "Sample 4",
+                "value": 57
+            }],
+            "value": 71
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 5431747,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "KGZ",
+            "name": "Kyrgyzstan",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 108
+            }, {
+                "name": "Sample 2",
+                "value": 24
+            }, {
+                "name": "Sample 3",
+                "value": 64
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 95
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 14494293,
+            "mapcolor7": 6,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 5,
+            "iso_a3": "KHM",
+            "name": "Cambodia",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 44
+            }, {
+                "name": "Sample 2",
+                "value": 34
+            }, {
+                "name": "Sample 3",
+                "value": 58
+            }, {
+                "name": "Sample 4",
+                "value": 100
+            }],
+            "value": 48
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 48508972,
+            "mapcolor7": 4,
+            "continent": "Asia",
+            "economy": "4. Emerging region: MIKT",
+            "mapcolor13": 5,
+            "iso_a3": "KOR",
+            "name": "Korea",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 45
+            }, {
+                "name": "Sample 2",
+                "value": 104
+            }, {
+                "name": "Sample 3",
+                "value": 88
+            }, {
+                "name": "Sample 4",
+                "value": 50
+            }],
+            "value": 63
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 1804838,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 11,
+            "iso_a3": "-99",
+            "name": "Kosovo",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 92
+            }, {
+                "name": "Sample 2",
+                "value": 80
+            }, {
+                "name": "Sample 3",
+                "value": 102
+            }, {
+                "name": "Sample 4",
+                "value": 35
+            }],
+            "value": 78
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 2691158,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "KWT",
+            "name": "Kuwait",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 96
+            }, {
+                "name": "Sample 2",
+                "value": 88
+            }, {
+                "name": "Sample 3",
+                "value": 22
+            }, {
+                "name": "Sample 4",
+                "value": 106
+            }],
+            "value": 47
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 6834942,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 9,
+            "iso_a3": "LAO",
+            "name": "Lao PDR",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 77
+            }, {
+                "name": "Sample 2",
+                "value": 105
+            }, {
+                "name": "Sample 3",
+                "value": 57
+            }, {
+                "name": "Sample 4",
+                "value": 100
+            }],
+            "value": 76
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 4017095,
+            "mapcolor7": 4,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 12,
+            "iso_a3": "LBN",
+            "name": "Lebanon",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 79
+            }, {
+                "name": "Sample 2",
+                "value": 52
+            }, {
+                "name": "Sample 3",
+                "value": 58
+            }, {
+                "name": "Sample 4",
+                "value": 58
+            }],
+            "value": 74
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 3441790,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 9,
+            "iso_a3": "LBR",
+            "name": "Liberia",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 43
+            }, {
+                "name": "Sample 2",
+                "value": 11
+            }, {
+                "name": "Sample 3",
+                "value": 69
+            }, {
+                "name": "Sample 4",
+                "value": 70
+            }],
+            "value": 69
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 6310434,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 11,
+            "iso_a3": "LBY",
+            "name": "Libya",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 43
+            }, {
+                "name": "Sample 2",
+                "value": 76
+            }, {
+                "name": "Sample 3",
+                "value": 109
+            }, {
+                "name": "Sample 4",
+                "value": 63
+            }],
+            "value": 54
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 21324791,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 9,
+            "iso_a3": "LKA",
+            "name": "Sri Lanka",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 11
+            }, {
+                "name": "Sample 2",
+                "value": 32
+            }, {
+                "name": "Sample 3",
+                "value": 36
+            }, {
+                "name": "Sample 4",
+                "value": 94
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 2130819,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 8,
+            "iso_a3": "LSO",
+            "name": "Lesotho",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 106
+            }, {
+                "name": "Sample 2",
+                "value": 33
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 90
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 3555179,
+            "mapcolor7": 6,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "LTU",
+            "name": "Lithuania",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 96
+            }, {
+                "name": "Sample 3",
+                "value": 73
+            }, {
+                "name": "Sample 4",
+                "value": 90
+            }],
+            "value": 95
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 491775,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 7,
+            "iso_a3": "LUX",
+            "name": "Luxembourg",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 17
+            }, {
+                "name": "Sample 3",
+                "value": 18
+            }, {
+                "name": "Sample 4",
+                "value": 36
+            }],
+            "value": 26
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 2231503,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 13,
+            "iso_a3": "LVA",
+            "name": "Latvia",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 18
+            }, {
+                "name": "Sample 2",
+                "value": 35
+            }, {
+                "name": "Sample 3",
+                "value": 48
+            }, {
+                "name": "Sample 4",
+                "value": 35
+            }],
+            "value": 18
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 34859364,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 9,
+            "iso_a3": "MAR",
+            "name": "Morocco",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 36
+            }, {
+                "name": "Sample 2",
+                "value": 96
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 86
+            }],
+            "value": 48
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 4320748,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 12,
+            "iso_a3": "MDA",
+            "name": "Moldova",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 52
+            }, {
+                "name": "Sample 2",
+                "value": 108
+            }, {
+                "name": "Sample 3",
+                "value": 22
+            }, {
+                "name": "Sample 4",
+                "value": 38
+            }],
+            "value": 16
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 20653556,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 3,
+            "iso_a3": "MDG",
+            "name": "Madagascar",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 44
+            }, {
+                "name": "Sample 2",
+                "value": 85
+            }, {
+                "name": "Sample 3",
+                "value": 11
+            }, {
+                "name": "Sample 4",
+                "value": 48
+            }],
+            "value": 65
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 111211789,
+            "mapcolor7": 6,
+            "continent": "North America",
+            "economy": "4. Emerging region: MIKT",
+            "mapcolor13": 3,
+            "iso_a3": "MEX",
+            "name": "Mexico",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 90
+            }, {
+                "name": "Sample 2",
+                "value": 108
+            }, {
+                "name": "Sample 3",
+                "value": 29
+            }, {
+                "name": "Sample 4",
+                "value": 26
+            }],
+            "value": 46
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 2066718,
+            "mapcolor7": 5,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "MKD",
+            "name": "Macedonia",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 87
+            }, {
+                "name": "Sample 2",
+                "value": 50
+            }, {
+                "name": "Sample 3",
+                "value": 100
+            }, {
+                "name": "Sample 4",
+                "value": 109
+            }],
+            "value": 19
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 12666987,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "MLI",
+            "name": "Mali",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 10
+            }, {
+                "name": "Sample 2",
+                "value": 51
+            }, {
+                "name": "Sample 3",
+                "value": 26
+            }, {
+                "name": "Sample 4",
+                "value": 51
+            }],
+            "value": 81
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 48137741,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 13,
+            "iso_a3": "MMR",
+            "name": "Myanmar",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 73
+            }, {
+                "name": "Sample 2",
+                "value": 95
+            }, {
+                "name": "Sample 3",
+                "value": 41
+            }, {
+                "name": "Sample 4",
+                "value": 90
+            }],
+            "value": 62
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 672180,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "MNE",
+            "name": "Montenegro",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 63
+            }, {
+                "name": "Sample 2",
+                "value": 25
+            }, {
+                "name": "Sample 3",
+                "value": 13
+            }, {
+                "name": "Sample 4",
+                "value": 106
+            }],
+            "value": 21
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 3041142,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "MNG",
+            "name": "Mongolia",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 91
+            }, {
+                "name": "Sample 2",
+                "value": 75
+            }, {
+                "name": "Sample 3",
+                "value": 32
+            }, {
+                "name": "Sample 4",
+                "value": 41
+            }],
+            "value": 62
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 21669278,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 4,
+            "iso_a3": "MOZ",
+            "name": "Mozambique",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 27
+            }, {
+                "name": "Sample 2",
+                "value": 36
+            }, {
+                "name": "Sample 3",
+                "value": 41
+            }, {
+                "name": "Sample 4",
+                "value": 39
+            }],
+            "value": 37
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 3129486,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 1,
+            "iso_a3": "MRT",
+            "name": "Mauritania",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 77
+            }, {
+                "name": "Sample 2",
+                "value": 44
+            }, {
+                "name": "Sample 3",
+                "value": 13
+            }, {
+                "name": "Sample 4",
+                "value": 31
+            }],
+            "value": 64
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 14268711,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 5,
+            "iso_a3": "MWI",
+            "name": "Malawi",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 81
+            }, {
+                "name": "Sample 2",
+                "value": 53
+            }, {
+                "name": "Sample 3",
+                "value": 23
+            }, {
+                "name": "Sample 4",
+                "value": 31
+            }],
+            "value": 94
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 25715819,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "MYS",
+            "name": "Malaysia",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 35
+            }, {
+                "name": "Sample 2",
+                "value": 44
+            }, {
+                "name": "Sample 3",
+                "value": 45
+            }, {
+                "name": "Sample 4",
+                "value": 73
+            }],
+            "value": 105
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 2108665,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 7,
+            "iso_a3": "NAM",
+            "name": "Namibia",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 47
+            }, {
+                "name": "Sample 2",
+                "value": 109
+            }, {
+                "name": "Sample 3",
+                "value": 17
+            }, {
+                "name": "Sample 4",
+                "value": 55
+            }],
+            "value": 90
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 227436,
+            "mapcolor7": 7,
+            "continent": "Oceania",
+            "economy": "6. Developing region",
+            "mapcolor13": 11,
+            "iso_a3": "NCL",
+            "name": "New Caledonia",
+            "mapcolor9": 9,
+            "data": [{
+                "name": "Sample 1",
+                "value": 92
+            }, {
+                "name": "Sample 2",
+                "value": 24
+            }, {
+                "name": "Sample 3",
+                "value": 70
+            }, {
+                "name": "Sample 4",
+                "value": 57
+            }],
+            "value": 28
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 15306252,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 13,
+            "iso_a3": "NER",
+            "name": "Niger",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 13
+            }, {
+                "name": "Sample 2",
+                "value": 82
+            }, {
+                "name": "Sample 3",
+                "value": 13
+            }, {
+                "name": "Sample 4",
+                "value": 63
+            }],
+            "value": 29
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 149229090,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 2,
+            "iso_a3": "NGA",
+            "name": "Nigeria",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 68
+            }, {
+                "name": "Sample 2",
+                "value": 10
+            }, {
+                "name": "Sample 3",
+                "value": 27
+            }, {
+                "name": "Sample 4",
+                "value": 58
+            }],
+            "value": 13
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 5891199,
+            "mapcolor7": 1,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 9,
+            "iso_a3": "NIC",
+            "name": "Nicaragua",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 83
+            }, {
+                "name": "Sample 2",
+                "value": 74
+            }, {
+                "name": "Sample 3",
+                "value": 48
+            }, {
+                "name": "Sample 4",
+                "value": 31
+            }],
+            "value": 68
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 16715999,
+            "mapcolor7": 4,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "NLD",
+            "name": "Netherlands",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 75
+            }, {
+                "name": "Sample 2",
+                "value": 60
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 23
+            }],
+            "value": 98
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 4676305,
+            "mapcolor7": 5,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 12,
+            "iso_a3": "NOR",
+            "name": "Norway",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 102
+            }, {
+                "name": "Sample 2",
+                "value": 88
+            }, {
+                "name": "Sample 3",
+                "value": 78
+            }, {
+                "name": "Sample 4",
+                "value": 10
+            }],
+            "value": 71
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 28563377,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 12,
+            "iso_a3": "NPL",
+            "name": "Nepal",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 64
+            }, {
+                "name": "Sample 2",
+                "value": 71
+            }, {
+                "name": "Sample 3",
+                "value": 60
+            }, {
+                "name": "Sample 4",
+                "value": 102
+            }],
+            "value": 47
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 4213418,
+            "mapcolor7": 3,
+            "continent": "Oceania",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 4,
+            "iso_a3": "NZL",
+            "name": "New Zealand",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 34
+            }, {
+                "name": "Sample 2",
+                "value": 59
+            }, {
+                "name": "Sample 3",
+                "value": 47
+            }, {
+                "name": "Sample 4",
+                "value": 14
+            }],
+            "value": 66
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 3418085,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "OMN",
+            "name": "Oman",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 69
+            }, {
+                "name": "Sample 2",
+                "value": 95
+            }, {
+                "name": "Sample 3",
+                "value": 57
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 38
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 176242949,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 11,
+            "iso_a3": "PAK",
+            "name": "Pakistan",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 83
+            }, {
+                "name": "Sample 2",
+                "value": 14
+            }, {
+                "name": "Sample 3",
+                "value": 34
+            }, {
+                "name": "Sample 4",
+                "value": 34
+            }],
+            "value": 61
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 3360474,
+            "mapcolor7": 4,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "PAN",
+            "name": "Panama",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 35
+            }, {
+                "name": "Sample 2",
+                "value": 102
+            }, {
+                "name": "Sample 3",
+                "value": 11
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 101
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 29546963,
+            "mapcolor7": 4,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 11,
+            "iso_a3": "PER",
+            "name": "Peru",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 76
+            }, {
+                "name": "Sample 2",
+                "value": 61
+            }, {
+                "name": "Sample 3",
+                "value": 67
+            }, {
+                "name": "Sample 4",
+                "value": 61
+            }],
+            "value": 50
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 97976603,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 8,
+            "iso_a3": "PHL",
+            "name": "Philippines",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 87
+            }, {
+                "name": "Sample 2",
+                "value": 84
+            }, {
+                "name": "Sample 3",
+                "value": 81
+            }, {
+                "name": "Sample 4",
+                "value": 76
+            }],
+            "value": 72
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 6057263,
+            "mapcolor7": 4,
+            "continent": "Oceania",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "PNG",
+            "name": "Papua New Guinea",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 79
+            }, {
+                "name": "Sample 2",
+                "value": 91
+            }, {
+                "name": "Sample 3",
+                "value": 20
+            }, {
+                "name": "Sample 4",
+                "value": 23
+            }],
+            "value": 60
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 38482919,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 2,
+            "iso_a3": "POL",
+            "name": "Poland",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 72
+            }, {
+                "name": "Sample 2",
+                "value": 52
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 53
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 3971020,
+            "mapcolor7": 4,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "PRI",
+            "name": "Puerto Rico",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 97
+            }, {
+                "name": "Sample 2",
+                "value": 32
+            }, {
+                "name": "Sample 3",
+                "value": 35
+            }, {
+                "name": "Sample 4",
+                "value": 91
+            }],
+            "value": 16
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 22665345,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 9,
+            "iso_a3": "PRK",
+            "name": "Dem. Rep. Korea",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 39
+            }, {
+                "name": "Sample 2",
+                "value": 45
+            }, {
+                "name": "Sample 3",
+                "value": 108
+            }, {
+                "name": "Sample 4",
+                "value": 68
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 10707924,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 4,
+            "iso_a3": "PRT",
+            "name": "Portugal",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 67
+            }, {
+                "name": "Sample 2",
+                "value": 47
+            }, {
+                "name": "Sample 3",
+                "value": 102
+            }, {
+                "name": "Sample 4",
+                "value": 16
+            }],
+            "value": 67
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 6995655,
+            "mapcolor7": 6,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 2,
+            "iso_a3": "PRY",
+            "name": "Paraguay",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 81
+            }, {
+                "name": "Sample 2",
+                "value": 80
+            }, {
+                "name": "Sample 3",
+                "value": 43
+            }, {
+                "name": "Sample 4",
+                "value": 60
+            }],
+            "value": 19
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 4119083,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 8,
+            "iso_a3": "PSE",
+            "name": "Palestine",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 17
+            }, {
+                "name": "Sample 2",
+                "value": 42
+            }, {
+                "name": "Sample 3",
+                "value": 74
+            }, {
+                "name": "Sample 4",
+                "value": 55
+            }],
+            "value": 48
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 833285,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 4,
+            "iso_a3": "QAT",
+            "name": "Qatar",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 52
+            }, {
+                "name": "Sample 2",
+                "value": 38
+            }, {
+                "name": "Sample 3",
+                "value": 84
+            }, {
+                "name": "Sample 4",
+                "value": 15
+            }],
+            "value": 42
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 22215421,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 13,
+            "iso_a3": "ROU",
+            "name": "Romania",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 108
+            }, {
+                "name": "Sample 2",
+                "value": 74
+            }, {
+                "name": "Sample 3",
+                "value": 60
+            }, {
+                "name": "Sample 4",
+                "value": 98
+            }],
+            "value": 101
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 140041247,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "3. Emerging region: BRIC",
+            "mapcolor13": 7,
+            "iso_a3": "RUS",
+            "name": "Russia",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 72
+            }, {
+                "name": "Sample 2",
+                "value": 33
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 99
+            }],
+            "value": 96
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 10473282,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 10,
+            "iso_a3": "RWA",
+            "name": "Rwanda",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 94
+            }, {
+                "name": "Sample 2",
+                "value": 18
+            }, {
+                "name": "Sample 3",
+                "value": 16
+            }, {
+                "name": "Sample 4",
+                "value": 39
+            }],
+            "value": 95
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": -99,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 4,
+            "iso_a3": "ESH",
+            "name": "W. Sahara",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 66
+            }, {
+                "name": "Sample 2",
+                "value": 79
+            }, {
+                "name": "Sample 3",
+                "value": 72
+            }, {
+                "name": "Sample 4",
+                "value": 52
+            }],
+            "value": 83
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 28686633,
+            "mapcolor7": 6,
+            "continent": "Asia",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 7,
+            "iso_a3": "SAU",
+            "name": "Saudi Arabia",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 31
+            }, {
+                "name": "Sample 2",
+                "value": 74
+            }, {
+                "name": "Sample 3",
+                "value": 107
+            }, {
+                "name": "Sample 4",
+                "value": 54
+            }],
+            "value": 11
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 25946220,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 1,
+            "iso_a3": "SDN",
+            "name": "Sudan",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 106
+            }, {
+                "name": "Sample 2",
+                "value": 85
+            }, {
+                "name": "Sample 3",
+                "value": 27
+            }, {
+                "name": "Sample 4",
+                "value": 54
+            }],
+            "value": 78
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 10625176,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 5,
+            "iso_a3": "SSD",
+            "name": "S. Sudan",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 79
+            }, {
+                "name": "Sample 2",
+                "value": 22
+            }, {
+                "name": "Sample 3",
+                "value": 34
+            }, {
+                "name": "Sample 4",
+                "value": 96
+            }],
+            "value": 31
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 13711597,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 5,
+            "iso_a3": "SEN",
+            "name": "Senegal",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 89
+            }, {
+                "name": "Sample 2",
+                "value": 74
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 47
+            }],
+            "value": 20
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 595613,
+            "mapcolor7": 1,
+            "continent": "Oceania",
+            "economy": "7. Least developed region",
+            "mapcolor13": 6,
+            "iso_a3": "SLB",
+            "name": "Solomon Is.",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 37
+            }, {
+                "name": "Sample 2",
+                "value": 20
+            }, {
+                "name": "Sample 3",
+                "value": 90
+            }, {
+                "name": "Sample 4",
+                "value": 72
+            }],
+            "value": 65
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 6440053,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "SLE",
+            "name": "Sierra Leone",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 107
+            }, {
+                "name": "Sample 2",
+                "value": 53
+            }, {
+                "name": "Sample 3",
+                "value": 86
+            }, {
+                "name": "Sample 4",
+                "value": 41
+            }],
+            "value": 28
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 7185218,
+            "mapcolor7": 1,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 8,
+            "iso_a3": "SLV",
+            "name": "El Salvador",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 19
+            }, {
+                "name": "Sample 2",
+                "value": 103
+            }, {
+                "name": "Sample 3",
+                "value": 74
+            }, {
+                "name": "Sample 4",
+                "value": 30
+            }],
+            "value": 25
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 3500000,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "-99",
+            "name": "Somaliland",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 39
+            }, {
+                "name": "Sample 2",
+                "value": 20
+            }, {
+                "name": "Sample 3",
+                "value": 103
+            }, {
+                "name": "Sample 4",
+                "value": 39
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 9832017,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 7,
+            "iso_a3": "SOM",
+            "name": "Somalia",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 77
+            }, {
+                "name": "Sample 2",
+                "value": 21
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 57
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 7379339,
+            "mapcolor7": 3,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 10,
+            "iso_a3": "SRB",
+            "name": "Serbia",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 83
+            }, {
+                "name": "Sample 2",
+                "value": 86
+            }, {
+                "name": "Sample 3",
+                "value": 57
+            }, {
+                "name": "Sample 4",
+                "value": 18
+            }],
+            "value": 17
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 481267,
+            "mapcolor7": 1,
+            "continent": "South America",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "SUR",
+            "name": "Suriname",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 85
+            }, {
+                "name": "Sample 2",
+                "value": 89
+            }, {
+                "name": "Sample 3",
+                "value": 53
+            }, {
+                "name": "Sample 4",
+                "value": 106
+            }],
+            "value": 34
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 5463046,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 9,
+            "iso_a3": "SVK",
+            "name": "Slovakia",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 55
+            }, {
+                "name": "Sample 2",
+                "value": 38
+            }, {
+                "name": "Sample 3",
+                "value": 68
+            }, {
+                "name": "Sample 4",
+                "value": 25
+            }],
+            "value": 41
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 2005692,
+            "mapcolor7": 2,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 12,
+            "iso_a3": "SVN",
+            "name": "Slovenia",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 50
+            }, {
+                "name": "Sample 2",
+                "value": 107
+            }, {
+                "name": "Sample 3",
+                "value": 14
+            }, {
+                "name": "Sample 4",
+                "value": 103
+            }],
+            "value": 43
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 9059651,
+            "mapcolor7": 1,
+            "continent": "Europe",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 4,
+            "iso_a3": "SWE",
+            "name": "Sweden",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 15
+            }, {
+                "name": "Sample 2",
+                "value": 24
+            }, {
+                "name": "Sample 3",
+                "value": 58
+            }, {
+                "name": "Sample 4",
+                "value": 51
+            }],
+            "value": 98
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 1123913,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "SWZ",
+            "name": "Swaziland",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 26
+            }, {
+                "name": "Sample 2",
+                "value": 72
+            }, {
+                "name": "Sample 3",
+                "value": 93
+            }, {
+                "name": "Sample 4",
+                "value": 37
+            }],
+            "value": 54
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 20178485,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 6,
+            "iso_a3": "SYR",
+            "name": "Syria",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 99
+            }, {
+                "name": "Sample 2",
+                "value": 62
+            }, {
+                "name": "Sample 3",
+                "value": 26
+            }, {
+                "name": "Sample 4",
+                "value": 35
+            }],
+            "value": 55
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 10329208,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 6,
+            "iso_a3": "TCD",
+            "name": "Chad",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 102
+            }, {
+                "name": "Sample 2",
+                "value": 13
+            }, {
+                "name": "Sample 3",
+                "value": 18
+            }, {
+                "name": "Sample 4",
+                "value": 95
+            }],
+            "value": 102
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 6019877,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 5,
+            "iso_a3": "TGO",
+            "name": "Togo",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 48
+            }, {
+                "name": "Sample 2",
+                "value": 37
+            }, {
+                "name": "Sample 3",
+                "value": 70
+            }, {
+                "name": "Sample 4",
+                "value": 68
+            }],
+            "value": 54
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 65905410,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 1,
+            "iso_a3": "THA",
+            "name": "Thailand",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 17
+            }, {
+                "name": "Sample 2",
+                "value": 92
+            }, {
+                "name": "Sample 3",
+                "value": 109
+            }, {
+                "name": "Sample 4",
+                "value": 36
+            }],
+            "value": 58
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 7349145,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "TJK",
+            "name": "Tajikistan",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 27
+            }, {
+                "name": "Sample 2",
+                "value": 63
+            }, {
+                "name": "Sample 3",
+                "value": 97
+            }, {
+                "name": "Sample 4",
+                "value": 36
+            }],
+            "value": 28
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 4884887,
+            "mapcolor7": 3,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 9,
+            "iso_a3": "TKM",
+            "name": "Turkmenistan",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 107
+            }, {
+                "name": "Sample 2",
+                "value": 62
+            }, {
+                "name": "Sample 3",
+                "value": 49
+            }, {
+                "name": "Sample 4",
+                "value": 82
+            }],
+            "value": 38
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 1131612,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 3,
+            "iso_a3": "TLS",
+            "name": "Timor-Leste",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 98
+            }, {
+                "name": "Sample 2",
+                "value": 40
+            }, {
+                "name": "Sample 3",
+                "value": 42
+            }, {
+                "name": "Sample 4",
+                "value": 54
+            }],
+            "value": 103
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 1310000,
+            "mapcolor7": 5,
+            "continent": "North America",
+            "economy": "6. Developing region",
+            "mapcolor13": 5,
+            "iso_a3": "TTO",
+            "name": "Trinidad and Tobago",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 102
+            }, {
+                "name": "Sample 2",
+                "value": 82
+            }, {
+                "name": "Sample 3",
+                "value": 55
+            }, {
+                "name": "Sample 4",
+                "value": 98
+            }],
+            "value": 109
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 10486339,
+            "mapcolor7": 4,
+            "continent": "Africa",
+            "economy": "6. Developing region",
+            "mapcolor13": 2,
+            "iso_a3": "TUN",
+            "name": "Tunisia",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 96
+            }, {
+                "name": "Sample 2",
+                "value": 18
+            }, {
+                "name": "Sample 3",
+                "value": 34
+            }, {
+                "name": "Sample 4",
+                "value": 75
+            }],
+            "value": 34
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 76805524,
+            "mapcolor7": 6,
+            "continent": "Asia",
+            "economy": "4. Emerging region: MIKT",
+            "mapcolor13": 4,
+            "iso_a3": "TUR",
+            "name": "Turkey",
+            "mapcolor9": 8,
+            "data": [{
+                "name": "Sample 1",
+                "value": 46
+            }, {
+                "name": "Sample 2",
+                "value": 53
+            }, {
+                "name": "Sample 3",
+                "value": 54
+            }, {
+                "name": "Sample 4",
+                "value": 52
+            }],
+            "value": 53
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "2. High income: nonOECD",
+            "pop_est": 22974347,
+            "mapcolor7": 1,
+            "continent": "Asia",
+            "economy": "2. Developed region: nonG7",
+            "mapcolor13": 2,
+            "iso_a3": "TWN",
+            "name": "Taiwan",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 48
+            }, {
+                "name": "Sample 2",
+                "value": 56
+            }, {
+                "name": "Sample 3",
+                "value": 53
+            }, {
+                "name": "Sample 4",
+                "value": 44
+            }],
+            "value": 92
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 41048532,
+            "mapcolor7": 3,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 2,
+            "iso_a3": "TZA",
+            "name": "Tanzania",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 108
+            }, {
+                "name": "Sample 2",
+                "value": 42
+            }, {
+                "name": "Sample 3",
+                "value": 22
+            }, {
+                "name": "Sample 4",
+                "value": 81
+            }],
+            "value": 71
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 32369558,
+            "mapcolor7": 6,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 4,
+            "iso_a3": "UGA",
+            "name": "Uganda",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 81
+            }, {
+                "name": "Sample 2",
+                "value": 60
+            }, {
+                "name": "Sample 3",
+                "value": 96
+            }, {
+                "name": "Sample 4",
+                "value": 76
+            }],
+            "value": 10
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 45700395,
+            "mapcolor7": 5,
+            "continent": "Europe",
+            "economy": "6. Developing region",
+            "mapcolor13": 3,
+            "iso_a3": "UKR",
+            "name": "Ukraine",
+            "mapcolor9": 6,
+            "data": [{
+                "name": "Sample 1",
+                "value": 76
+            }, {
+                "name": "Sample 2",
+                "value": 38
+            }, {
+                "name": "Sample 3",
+                "value": 64
+            }, {
+                "name": "Sample 4",
+                "value": 68
+            }],
+            "value": 24
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 3494382,
+            "mapcolor7": 1,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 10,
+            "iso_a3": "URY",
+            "name": "Uruguay",
+            "mapcolor9": 2,
+            "data": [{
+                "name": "Sample 1",
+                "value": 52
+            }, {
+                "name": "Sample 2",
+                "value": 72
+            }, {
+                "name": "Sample 3",
+                "value": 92
+            }, {
+                "name": "Sample 4",
+                "value": 56
+            }],
+            "value": 88
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "1. High income: OECD",
+            "pop_est": 313973000,
+            "mapcolor7": 4,
+            "continent": "North America",
+            "economy": "1. Developed region: G7",
+            "mapcolor13": 1,
+            "iso_a3": "USA",
+            "name": "United States",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 24
+            }, {
+                "name": "Sample 2",
+                "value": 103
+            }, {
+                "name": "Sample 3",
+                "value": 74
+            }, {
+                "name": "Sample 4",
+                "value": 48
+            }],
+            "value": 53
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 27606007,
+            "mapcolor7": 2,
+            "continent": "Asia",
+            "economy": "6. Developing region",
+            "mapcolor13": 4,
+            "iso_a3": "UZB",
+            "name": "Uzbekistan",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 24
+            }, {
+                "name": "Sample 2",
+                "value": 46
+            }, {
+                "name": "Sample 3",
+                "value": 105
+            }, {
+                "name": "Sample 4",
+                "value": 57
+            }],
+            "value": 83
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 26814843,
+            "mapcolor7": 1,
+            "continent": "South America",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 4,
+            "iso_a3": "VEN",
+            "name": "Venezuela",
+            "mapcolor9": 1,
+            "data": [{
+                "name": "Sample 1",
+                "value": 45
+            }, {
+                "name": "Sample 2",
+                "value": 93
+            }, {
+                "name": "Sample 3",
+                "value": 76
+            }, {
+                "name": "Sample 4",
+                "value": 49
+            }],
+            "value": 10
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 86967524,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 4,
+            "iso_a3": "VNM",
+            "name": "Vietnam",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 72
+            }, {
+                "name": "Sample 2",
+                "value": 82
+            }, {
+                "name": "Sample 3",
+                "value": 47
+            }, {
+                "name": "Sample 4",
+                "value": 54
+            }],
+            "value": 14
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 218519,
+            "mapcolor7": 6,
+            "continent": "Oceania",
+            "economy": "7. Least developed region",
+            "mapcolor13": 3,
+            "iso_a3": "VUT",
+            "name": "Vanuatu",
+            "mapcolor9": 7,
+            "data": [{
+                "name": "Sample 1",
+                "value": 40
+            }, {
+                "name": "Sample 2",
+                "value": 10
+            }, {
+                "name": "Sample 3",
+                "value": 30
+            }, {
+                "name": "Sample 4",
+                "value": 82
+            }],
+            "value": 61
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 23822783,
+            "mapcolor7": 5,
+            "continent": "Asia",
+            "economy": "7. Least developed region",
+            "mapcolor13": 11,
+            "iso_a3": "YEM",
+            "name": "Yemen",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 48
+            }, {
+                "name": "Sample 2",
+                "value": 18
+            }, {
+                "name": "Sample 3",
+                "value": 82
+            }, {
+                "name": "Sample 4",
+                "value": 17
+            }],
+            "value": 54
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "3. Upper middle income",
+            "pop_est": 49052489,
+            "mapcolor7": 2,
+            "continent": "Africa",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 2,
+            "iso_a3": "ZAF",
+            "name": "South Africa",
+            "mapcolor9": 4,
+            "data": [{
+                "name": "Sample 1",
+                "value": 76
+            }, {
+                "name": "Sample 2",
+                "value": 73
+            }, {
+                "name": "Sample 3",
+                "value": 66
+            }, {
+                "name": "Sample 4",
+                "value": 25
+            }],
+            "value": 84
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "4. Lower middle income",
+            "pop_est": 11862740,
+            "mapcolor7": 5,
+            "continent": "Africa",
+            "economy": "7. Least developed region",
+            "mapcolor13": 13,
+            "iso_a3": "ZMB",
+            "name": "Zambia",
+            "mapcolor9": 5,
+            "data": [{
+                "name": "Sample 1",
+                "value": 18
+            }, {
+                "name": "Sample 2",
+                "value": 64
+            }, {
+                "name": "Sample 3",
+                "value": 94
+            }, {
+                "name": "Sample 4",
+                "value": 11
+            }],
+            "value": 105
+        },
+        "geometry": null
+    }, {
+        "type": "Feature",
+        "properties": {
+            "income_grp": "5. Low income",
+            "pop_est": 12619600,
+            "mapcolor7": 1,
+            "continent": "Africa",
+            "economy": "5. Emerging region: G20",
+            "mapcolor13": 9,
+            "iso_a3": "ZWE",
+            "name": "Zimbabwe",
+            "mapcolor9": 3,
+            "data": [{
+                "name": "Sample 1",
+                "value": 94
+            }, {
+                "name": "Sample 2",
+                "value": 25
+            }, {
+                "name": "Sample 3",
+                "value": 69
+            }, {
+                "name": "Sample 4",
+                "value": 87
+            }],
+            "value": 56
+        },
+        "geometry": null
+    }]
+}

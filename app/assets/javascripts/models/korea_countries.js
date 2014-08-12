@@ -69,7 +69,8 @@ WY.models.KoreaCountries = (function(){
       }, this));
 
 
-    }
+    }, 
+
   }
 
   return KoreaCountries;

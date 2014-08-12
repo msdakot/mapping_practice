@@ -2,11 +2,9 @@ WY.models.GeoJSONCountries = (function(){
   function GeoJSONCountries(params){
 
     THREE.Object3D.call( this );
-
     this.geojson = params.geojson;
-
-
     this.countries = [];
+    this.bounding_box = null;
     
   }
 
@@ -19,12 +17,11 @@ WY.models.GeoJSONCountries = (function(){
       var geometry = feature.geometry;
       // console.log(geometry.coordinates.length);
       var color = new THREE.Color(colorbrewer.YlGn[6][i % 6]);
-
+      
       _.each(geometry.coordinates, _.bind(function(coordinate){
-        // console.log(geometry);
-        // console.log(coordinate[0]);
 
         if (geometry.type == "MultiPolygon") {
+
 
           _.each(coordinate, _.bind(function(sub_coordinate){
 
@@ -35,14 +32,17 @@ WY.models.GeoJSONCountries = (function(){
             
             var country_mesh = new WY.models.CountryMesh({
               geometry: shape_geometry,
+              properties: properties,
               color: color.clone()
             });
 
             country_mesh.init();
 
             this.add(country_mesh);
-
           }, this));
+
+          // geometry_center.divideScalar(coordinate.length);
+
 
         } else if (geometry.type == "Polygon"){
           var shape_contours = this.convert_geometries_to_shapes(coordinate);
@@ -52,17 +52,32 @@ WY.models.GeoJSONCountries = (function(){
           
           var country_mesh = new WY.models.CountryMesh({
             geometry: shape_geometry,
+            properties: properties,
             color: color.clone()
           });
 
           country_mesh.init();
 
           this.add(country_mesh);
-          
+
+
+
         }
         
       }, this));
     }, this));
+  };
+
+  GeoJSONCountries.prototype.find_country_by_name = function(name){
+    var countries = _.filter(this.children, function(country){
+      if (!_.isUndefined(country.properties)){
+        return country.properties.name == name;
+      } else {
+        return false;
+      }
+    });
+
+    return countries;
   };
 
 
@@ -78,6 +93,37 @@ WY.models.GeoJSONCountries = (function(){
 
     return vertices;
   };
+
+  GeoJSONCountries.prototype.set_bounding_box = function(){
+    var min = new THREE.Vector3();
+    var max = new THREE.Vector3();
+
+    if (this.children.length > 0) {
+      var first_min_point = this.children[0].geometry.boundingBox.min;
+      var first_max_point = this.children[0].geometry.boundingBox.max;
+
+      min.copy( first_min_point );
+      max.copy( first_max_point );
+
+      _.each(this.children, function(child){
+        var b_min = child.geometry.boundingBox.min;
+        var b_max = child.geometry.boundingBox.max;
+
+        min.x = Math.min(min.x, b_min.x);
+        min.y = Math.min(min.y, b_min.y);
+        min.z = Math.min(min.z, b_min.z);
+
+        max.x = Math.max(max.x, b_max.x);
+        max.y = Math.max(max.y, b_max.y);
+        max.z = Math.max(max.z, b_max.z);
+      });
+
+
+    }
+
+    this.boundingBox = new THREE.Box3(min, max);
+    
+  }
 
 
   return GeoJSONCountries;

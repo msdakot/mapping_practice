@@ -11,6 +11,10 @@ Rails.application.routes.draw do
     get '/practice_06', :to => 'map#practice_06'
     get '/practice_07', :to => 'map#practice_07'
     get '/practice_08', :to => 'map#practice_08'
+    get '/practice_09', :to => 'map#practice_09'
+    get '/practice_10', :to => 'map#practice_10'
+    get '/practice_11', :to => 'map#practice_11'
+    get '/practice_12', :to => 'map#practice_12'
     root :to => 'map#index'
   end
 

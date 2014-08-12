@@ -287,6 +287,34 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
 
   }());
 
+  this.lookAtBoundingBox = function(box){
+      // Compute world AABB center
+    var aabbCenter = box.center();
+
+    // Compute world AABB "radius"
+    var diag = new THREE.Vector3();
+    diag = diag.subVectors(box.max, box.min);
+    var radius = diag.length() * 0.5;
+
+    // Compute offset needed to move the camera back that much needed to center AABB
+    // _this.object.fov is the vertical field of view
+    var offset = radius / Math.tan(Math.PI / 180.0 * _this.object.fov * 0.5);
+
+    // Compute new camera position
+    var dir = new THREE.Vector3(_this.object.matrix.elements[8], _this.object.matrix.elements[9], _this.object.matrix.elements[10]);
+    dir.multiplyScalar(offset); 
+    
+    var newPos = new THREE.Vector3();
+    newPos.addVectors(aabbCenter, dir);
+
+    // // Update camera
+    _this.object.position.set( newPos.x, newPos.y, newPos.z );
+    _this.target.set(newPos.x, newPos.y, 0);
+    
+    
+    _this.object.lookAt(aabbCenter);
+  }
+
   this.lookAtObject = function(obj) {
     // Compute world AABB center
     var aabbCenter = obj.geometry.boundingBox.center();

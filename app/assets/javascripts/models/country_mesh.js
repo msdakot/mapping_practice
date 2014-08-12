@@ -2,7 +2,6 @@ WY.models.CountryMesh = (function(){
   function CountryMesh(params){
     
     THREE.Mesh.call( this );
-    this.name = "countrymesh";
     this.material = null;
     this.uniforms = {};
     this.attributes = {
@@ -11,6 +10,7 @@ WY.models.CountryMesh = (function(){
 
     this.geometry = params.geometry;
     this.color = params.color;
+    this.properties = params.properties;
 
     this.material = new THREE.ShaderMaterial({
       uniforms: this.uniforms,
@@ -37,6 +37,15 @@ WY.models.CountryMesh = (function(){
 
     // this.mesh = new THREE.Mesh(this.geometry, this.material);
 
+  };
+
+  CountryMesh.prototype.change_color = function(color){
+    this.color = color.clone();
+    _.each(this.attributes.customColor.value, _.bind(function(color_value){
+      color_value.copy(this.color);
+    }, this));
+
+    this.attributes.customColor.needsUpdate = true;
   };
 
   CountryMesh.prototype.set_mouse_over = function(){
