@@ -112,7 +112,7 @@ WY.views.practice_13_view = (function(){
 
     var only_seoul = {
       type: 'FeatureCollection',
-      features: _.filter(korea_geojson_data.features, function(f){ return f.properties.광역시코드 == "11" })
+      features: _.filter(korea_geojson_data.features, function(f){ return f.properties.metroCityCode == "11" })
     };
 
     korea_countries = new WY.models.GeoJSONCountries({
