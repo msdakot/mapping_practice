@@ -572,7 +572,7 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
     // _this.target.x = trackballmouse.x;
     // _this.target.y = trackballmouse.y;
 
-    vector3ToString(_zoomStart);
+    // vector3ToString(_zoomStart);
 
     _this.dispatchEvent( startEvent );
     _this.dispatchEvent( endEvent );

@@ -1,11 +1,15 @@
 WY.models.CountryLabel = (function(){
   function CountryLabel(params){
-    THREE.Sprite.call(this);
+    THREE.Mesh.call( this );
     // this.material = params.material;
     this.name = params.name;
+    this.uniforms = {};
+    this.attributes = {};
+    this.scale_num = 1.0;
+
   }
 
-  CountryLabel.prototype = Object.create(THREE.Sprite.prototype);
+  CountryLabel.prototype = Object.create(THREE.Mesh.prototype);
 
   CountryLabel.prototype.init = function(){
     var fontface = "Arial";
@@ -17,7 +21,7 @@ WY.models.CountryLabel = (function(){
     var canvas = document.createElement('canvas');
 
     // $("body").append($(canvas));
-    canvas.width = 400;
+    canvas.width = 300;
     var context = canvas.getContext('2d');
     context.font = "Bold " + fontsize + "px " + fontface;
     var metrics = context.measureText( this.name );
@@ -25,33 +29,6 @@ WY.models.CountryLabel = (function(){
     // console.log(metrics);
 
     // var ratio = metrics.width / 100;
-
-    var roundRect = function(ctx, x, y, w, h, r) 
-    {
-        ctx.beginPath();
-        ctx.moveTo(x+r, y);
-        ctx.lineTo(x+w-r, y);
-        ctx.quadraticCurveTo(x+w, y, x+w, y+r);
-        ctx.lineTo(x+w, y+h-r);
-        ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
-        ctx.lineTo(x+r, y+h);
-        ctx.quadraticCurveTo(x, y+h, x, y+h-r);
-        ctx.lineTo(x, y+r);
-        ctx.quadraticCurveTo(x, y, x+r, y);
-        ctx.closePath();
-        ctx.fill();
-        ctx.stroke();   
-    }
-
-
-    // background color
-    context.fillStyle   = "rgba(" + backgroundColor.r + "," + backgroundColor.g + ","
-                    + backgroundColor.b + "," + backgroundColor.a + ")";
-    // border color
-    context.strokeStyle = "rgba(" + borderColor.r + "," + borderColor.g + ","
-                    + borderColor.b + "," + borderColor.a + ")";
-
-
 
     context.fillStyle = "rgba(255, 255, 255, 1.0)";
 
@@ -61,9 +38,35 @@ WY.models.CountryLabel = (function(){
     var texture = new THREE.Texture(canvas) 
     texture.needsUpdate = true;
 
-    this.material = new THREE.SpriteMaterial( 
-      { map: texture  } );
-     this.scale.set(canvas.width / 150,1.0,1.0);
+    this.uniforms.label_texture = {type: 't', value: texture};
+
+    this.geometry = new THREE.PlaneGeometry(2.6, 1.5, 1, 1);
+    this.material = new THREE.ShaderMaterial({
+      uniforms: this.uniforms,
+      attributes: this.attributes,
+      vertexShader: WY.constants.ShaderLoader.shaders.basic_sprite.vertex,
+      fragmentShader: WY.constants.ShaderLoader.shaders.basic_sprite.fragment,
+      
+      blending: THREE.AdditiveBlending,
+      depthTest: false,
+      depthWrite: false,
+      transparent: true,
+      sizeAttenuation: true
+    });
+    
+
+    // this.scale.set(canvas.width / 150 * 1.0, 1.0, 1.0);
+  };
+
+  CountryLabel.prototype.update = function(camera){
+    this.scale_num = constrain(map(camera.position.z, 0.0001, 300, 0.15, 4.0), 0.15, 4.0);
+    // console.log(camera.position.z + " " + this.scale_num);
+    this.scale.set(this.scale_num, this.scale_num, this.scale_num);
+    if (this.scale_num > 3.6) {
+      this.visible = false;
+    } else {
+      this.visible = true;
+    }
   };
 
 
