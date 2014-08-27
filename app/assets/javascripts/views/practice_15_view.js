@@ -1,4 +1,4 @@
-WY.views.practice_09_view = (function(){
+WY.views.practice_15_view = (function(){
   var piechart_data,
       world_geojson_data,
       renderer,
@@ -8,17 +8,18 @@ WY.views.practice_09_view = (function(){
       projector,
       raycaster,
       tooltip,
+      labels = [],
       world_countries,
       mouse = new THREE.Vector2(), INTERSECTED, CLICK_INTERSECTED, mousedowned = false;
       
 
-  function practice_09_view(){
+  function practice_15_view(){
     load_shader();
   }
 
   function load_shader(){
     WY.constants.ShaderLoader = new WY.models.ShaderLoader({
-      shader_list: ['/assets/basic_line', '/assets/basic_color', '/assets/basic_marker']
+      shader_list: ['/assets/basic_line', '/assets/basic_color', '/assets/basic_marker', '/assets/basic_sprite']
     });
 
     WY.constants.ShaderLoader.on('load_complete', function(e){
@@ -140,6 +141,33 @@ WY.views.practice_09_view = (function(){
     // tooltip.hide();
 
     init_choropleth();
+    init_notice();
+  }
+
+  function init_notice(){
+    var max_value = d3.max(piechart_data.features, function(f){ return f.properties.value; });
+    _.each(piechart_data.features, function(feature){
+
+      if (feature.properties.value > max_value - 10) {
+        countries = world_countries.find_country_by_name(feature.properties.name);
+
+        var geometry_center = new THREE.Vector3();
+
+        _.each(countries, function(country){
+          geometry_center.copy(country.geometry.boundingBox.center());
+        });
+
+        var label = new WY.models.ImageLabel();
+
+        label.init();
+        label.position.copy(geometry_center);
+        scene.add(label);
+        labels.push(label);
+
+      }
+
+    });
+     
   }
 
   function init_choropleth(){
@@ -272,8 +300,12 @@ WY.views.practice_09_view = (function(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
     controls.update();
+
+    _.each(labels, function(label){
+      label.update(camera);
+    });
   }
 
 
-  return practice_09_view;
+  return practice_15_view;
 })();

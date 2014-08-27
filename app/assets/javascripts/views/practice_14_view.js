@@ -1,6 +1,6 @@
-WY.views.practice_09_view = (function(){
+WY.views.practice_14_view = (function(){
   var piechart_data,
-      world_geojson_data,
+      korea_geojson_data,
       renderer,
       scene,
       camera,
@@ -8,17 +8,17 @@ WY.views.practice_09_view = (function(){
       projector,
       raycaster,
       tooltip,
-      world_countries,
+      korea_countries,
       mouse = new THREE.Vector2(), INTERSECTED, CLICK_INTERSECTED, mousedowned = false;
       
 
-  function practice_09_view(){
+  function practice_14_view(){
     load_shader();
   }
 
   function load_shader(){
     WY.constants.ShaderLoader = new WY.models.ShaderLoader({
-      shader_list: ['/assets/basic_line', '/assets/basic_color', '/assets/basic_marker']
+      shader_list: ['/assets/basic_line', '/assets/basic_color', '/assets/basic_marker', '/assets/dashed_line']
     });
 
     WY.constants.ShaderLoader.on('load_complete', function(e){
@@ -41,12 +41,13 @@ WY.views.practice_09_view = (function(){
 
   function load_geojson_world(){
     $.ajax({
-      url: '/assets/world_countries.json',
+      url: '/assets/vadm3.json',
       type: 'GET',
       success: function(data){
-        world_geojson_data = data;
+        korea_geojson_data = data;
         init();
         animate();
+        
       }
     })
   }
@@ -77,7 +78,7 @@ WY.views.practice_09_view = (function(){
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera(
-      45, window.innerWidth / window.innerHeight, 1, 100000
+      45, window.innerWidth / window.innerHeight, 0.00001, 100000
     );
 
     camera.position.x = 4;
@@ -109,14 +110,20 @@ WY.views.practice_09_view = (function(){
     // scene.add(korea_countries.mesh);
     
 
+    var only_seoul = {
+      type: 'FeatureCollection',
+      features: _.filter(korea_geojson_data.features, function(f){ return f.properties.metroCityCode == "11" })
+    };
 
-
-    world_countries = new WY.models.GeoJSONCountries({
-      geojson: world_geojson_data
+    korea_countries = new WY.models.GeoJSONLineCountries({
+      geojson: only_seoul
     });
 
-    world_countries.init();
-    scene.add(world_countries);
+    
+    korea_countries.init();
+    korea_countries.set_bounding_box();
+
+    scene.add(korea_countries);
 
     // var marker = new WY.models.Marker({
     //   marker_data: marker_data
@@ -131,7 +138,7 @@ WY.views.practice_09_view = (function(){
     // $(renderer.domElement).mousedown(onDocumentMouseDown);
 
     // document.addEventListener( 'mouseup', onDocumentMouseUp, false );
-    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+    // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
     // tooltip = new WY.models.Tooltip({
     //   data: piechart_data
@@ -139,7 +146,12 @@ WY.views.practice_09_view = (function(){
     // tooltip.init();
     // tooltip.hide();
 
-    init_choropleth();
+    // init_choropleth();
+  
+
+
+    controls.lookAtBoundingBox(korea_countries.boundingBox);
+
   }
 
   function init_choropleth(){
@@ -161,21 +173,35 @@ WY.views.practice_09_view = (function(){
                             .range(d3.range(colors.length));
 
     _.each(piechart_data.features, function(feature){
-      countries = world_countries.find_country_by_name(feature.properties.name);
+      countries = korea_countries.find_country_by_name(feature.properties.name);
+
+      var geometry_center = new THREE.Vector3();
+
       _.each(countries, function(country){
         country.change_color(colors[quantize(feature.properties.value)]);
+        geometry_center.copy(country.geometry.boundingBox.center());
       });
+
+       var label = new WY.models.CountryLabel({
+        name: feature.properties.value
+      });
+
+      label.init();
+      label.position.copy(geometry_center);
+      scene.add(label);
+
     });
+     
   }
 
   function onDocumentMouseUp(event){
     mousedowned = false;
     if ( CLICK_INTERSECTED ) {
 
-      CLICK_INTERSECTED.set_mouse_out();
+          CLICK_INTERSECTED.set_mouse_out();
 
-    }
-    CLICK_INTERSECTED = null;
+        }
+        CLICK_INTERSECTED = null;
   }
 
   function onDocumentMouseMove( event ) {
@@ -185,7 +211,7 @@ WY.views.practice_09_view = (function(){
       mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
       mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
-      // tooltip.update(event);
+      tooltip.update(event);
 
       if (!mousedowned){
        var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
@@ -200,11 +226,21 @@ WY.views.practice_09_view = (function(){
             if ( INTERSECTED != intersects[ 0 ].object ) {
 
               if ( INTERSECTED ) {
-                INTERSECTED.set_mouse_out();
+
+                if (!_.isUndefined(INTERSECTED.set_mouse_out)) {
+                  INTERSECTED.set_mouse_out();
+                }
               }
               INTERSECTED = intersects[ 0 ].object;
-              INTERSECTED.set_mouse_over();
-              // tooltip.show(INTERSECTED);
+
+              if (!_.isUndefined(INTERSECTED.set_mouse_over)) {
+                INTERSECTED.set_mouse_over();
+                tooltip.show(INTERSECTED);
+              } else {
+                    
+                INTERSECTED = null;
+                tooltip.hide();
+              }
               // console.log("mouse over");
 
             }
@@ -213,11 +249,13 @@ WY.views.practice_09_view = (function(){
 
             if ( INTERSECTED ) {
 
-              INTERSECTED.set_mouse_out();
+              if (!_.isUndefined(INTERSECTED.set_mouse_out)) {
+                INTERSECTED.set_mouse_out();
+              }
 
             }
             INTERSECTED = null;
-            // tooltip.hide();
+            tooltip.hide();
               // console.log("mouse out");
           }
       }
@@ -274,6 +312,6 @@ WY.views.practice_09_view = (function(){
     controls.update();
   }
 
-
-  return practice_09_view;
+  return practice_14_view;
 })();
+
