@@ -226,8 +226,8 @@ WY.views.practice_15_view = (function(){
           if ( intersects.length > 0 ) {
 
             if ( INTERSECTED != intersects[ 0 ].object ) {
-
-              if ( INTERSECTED ) {
+              
+              if ( !_.isUndefined(INTERSECTED) && !_.isNull(INTERSECTED) ) {
                 INTERSECTED.set_mouse_out();
               }
               INTERSECTED = intersects[ 0 ].object;
@@ -239,7 +239,7 @@ WY.views.practice_15_view = (function(){
 
           } else {
 
-            if ( INTERSECTED ) {
+            if ( !_.isUndefined(INTERSECTED) && !_.isNull(INTERSECTED)) {
 
               INTERSECTED.set_mouse_out();
 
