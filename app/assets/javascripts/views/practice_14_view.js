@@ -41,7 +41,7 @@ WY.views.practice_14_view = (function(){
 
   function load_geojson_world(){
     $.ajax({
-      url: '/assets/vadm3.json',
+      url: '/assets/local_11_complexity_3.json',
       type: 'GET',
       success: function(data){
         korea_geojson_data = data;
@@ -116,7 +116,7 @@ WY.views.practice_14_view = (function(){
     };
 
     korea_countries = new WY.models.GeoJSONLineCountries({
-      geojson: only_seoul
+      geojson: korea_geojson_data
     });
 
     
@@ -148,8 +148,6 @@ WY.views.practice_14_view = (function(){
 
     // init_choropleth();
   
-
-
     controls.lookAtBoundingBox(korea_countries.boundingBox);
 
   }

@@ -311,7 +311,6 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
     _this.object.position.set( newPos.x, newPos.y, newPos.z );
     _this.target.set(newPos.x, newPos.y, 0);
     
-    
     _this.object.lookAt(aabbCenter);
   }
 

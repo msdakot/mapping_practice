@@ -21,9 +21,12 @@
 //= require ./vendor/colorbrewer.js
 //= require ./vendor/TweenMax.min.js
 //= require ./vendor/TimelineMax.min.js
-//
+//= require ./vendor/dat.gui.min.js
+
 //= require WY.js
+//= require LOGPRESSO.js
 //= require utils.js
 //= require_directory ./models
+//= require_directory ./models/logpresso
 //= require_directory ./views
 //= require_directory ./templates

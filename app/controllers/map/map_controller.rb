@@ -51,4 +51,7 @@ class Map::MapController < ApplicationController
 
   def practice_15
   end
+
+  def logpresso_map_widget
+  end
 end

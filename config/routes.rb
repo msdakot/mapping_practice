@@ -18,6 +18,10 @@ Rails.application.routes.draw do
     get '/practice_13', :to => 'map#practice_13'
     get '/practice_14', :to => 'map#practice_14'
     get '/practice_15', :to => 'map#practice_15'
+
+    # 로그프레소 맵 위젯으로 통으로 만들어 봅시다.
+    get '/logpresso_map_widget', :to => 'map#logpresso_map_widget'
+
     root :to => 'map#index'
   end
 
