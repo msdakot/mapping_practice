@@ -6,6 +6,8 @@ LOGPRESSO.models.MapWidget = (function(){
     this.projector;
     this.raycaster;
     this.geography_data = null;
+    this.completeLoadThreed = false;
+
     _.extend(this, Backbone.Event);
   
   }
@@ -35,8 +37,9 @@ LOGPRESSO.models.MapWidget = (function(){
       
     }, 
 
-    updateConfig: function(){
-
+    updateConfig: function(config){
+      this.config = config;
+      this.loadGeoJSON();
     },
 
     loadGeoJSON: function(){
@@ -93,10 +96,38 @@ LOGPRESSO.models.MapWidget = (function(){
         type: 'GET',
         success: _.bind(function(data){
           this.geography_data = data;
-          this.init_threed();
-          this.animate();
+          
+          if (!this.completeLoadThreed) {
+            this.init_threed();
+            this.animate();
+          }
+
+          this.reset_geography();
+          this.init_geography();
+
         }, this)
       })
+    },
+
+    reset_geography: function(){
+      if (!_.isUndefined(this.geography_mesh)){
+        this.scene.remove(this.geography_mesh);
+        this.geography_mesh = undefined;
+      }
+    },
+
+    init_geography: function(){
+      
+      this.geography_mesh = new LOGPRESSO.models.GeoJSONCountries({
+        geojson: this.geography_data
+      });
+
+      this.geography_mesh.init();
+      this.scene.add(this.geography_mesh);
+
+      this.geography_mesh.set_bounding_box();
+
+      this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
     },
 
     init_threed: function(){
@@ -145,21 +176,12 @@ LOGPRESSO.models.MapWidget = (function(){
       this.controls.noRotate = true;
 
       
-      this.geography_mesh = new LOGPRESSO.models.GeoJSONCountries({
-        geojson: this.geography_data
-      });
-
-      this.geography_mesh.init();
-      this.scene.add(this.geography_mesh);
       
       this.projector = new THREE.Projector();
       this.raycaster = new THREE.Raycaster();
 
-
-
-      this.geography_mesh.set_bounding_box();
-
-      this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
+      this.completeLoadThreed = true;
+ 
 
     },
 
