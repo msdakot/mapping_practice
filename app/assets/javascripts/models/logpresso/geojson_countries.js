@@ -5,6 +5,7 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
     this.geojson = params.geojson;
     this.countries = [];
     this.bounding_box = null;
+    this.type = params.type;
     
   }
 
@@ -29,16 +30,27 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
             // console.log(shape_contours);
             var shape = new THREE.Shape(shape_contours);
             var shape_geometry = new THREE.ShapeGeometry(shape);
+            var country;
+
+            if (this.type == 'mesh') {
+              country = new LOGPRESSO.models.CountryMesh({
+                geometry: shape_geometry,
+                properties: properties,
+                color: color.clone()
+              });
+
+            } else {
+              country = new LOGPRESSO.models.CountryLine({
+                geometry: shape_geometry,
+                properties: properties,
+                color: color.clone()
+              });
+
+            }
             
-            var country_mesh = new LOGPRESSO.models.CountryMesh({
-              geometry: shape_geometry,
-              properties: properties,
-              color: color.clone()
-            });
+            country.init();
 
-            country_mesh.init();
-
-            this.add(country_mesh);
+            this.add(country);
           }, this));
 
           // geometry_center.divideScalar(coordinate.length);
@@ -50,15 +62,26 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
           var shape = new THREE.Shape(shape_contours);
           var shape_geometry = new THREE.ShapeGeometry(shape);
           
-          var country_mesh = new LOGPRESSO.models.CountryMesh({
-            geometry: shape_geometry,
-            properties: properties,
-            color: color.clone()
-          });
+          var country;
 
-          country_mesh.init();
+          if (this.type == 'mesh') {
+            country = new LOGPRESSO.models.CountryMesh({
+              geometry: shape_geometry,
+              properties: properties,
+              color: color.clone()
+            });
 
-          this.add(country_mesh);
+          } else {
+            country = new LOGPRESSO.models.CountryLine({
+              geometry: shape_geometry,
+              properties: properties,
+              color: color.clone()
+            });
+
+          }
+          country.init();
+
+          this.add(country);
 
 
 

@@ -6,9 +6,11 @@ LOGPRESSO.models.MapWidget = (function(){
     this.projector;
     this.raycaster;
     this.geography_data = null;
+    this.scene;
     this.completeLoadThreed = false;
+    // this.data = null;
 
-    _.extend(this, Backbone.Event);
+    _.extend(this, Backbone.Events);
   
   }
 
@@ -36,6 +38,26 @@ LOGPRESSO.models.MapWidget = (function(){
       
       
     }, 
+
+    setData: function(_data){
+      this.data = _data;
+
+      this.syncData();
+    },
+
+    syncData: function(){
+
+      if (this.config.type == 'marker') {
+        this.marker = new LOGPRESSO.models.Marker({
+          marker_data: this.data
+        });
+
+        this.marker.init();
+        this.scene.add(this.marker.point_cloud);
+      } else { // area
+
+      }
+    },
 
     updateConfig: function(config){
       this.config = config;
@@ -114,12 +136,19 @@ LOGPRESSO.models.MapWidget = (function(){
         this.scene.remove(this.geography_mesh);
         this.geography_mesh = undefined;
       }
+
+      if (!_.isUndefined(this.data)){
+        this.scene.remove(this.marker.point_cloud);
+        this.marker = null;
+        this.data = undefined;
+      }
     },
 
     init_geography: function(){
       
       this.geography_mesh = new LOGPRESSO.models.GeoJSONCountries({
-        geojson: this.geography_data
+        geojson: this.geography_data,
+        type: this.config.type == 'marker' ? "line" : "mesh"
       });
 
       this.geography_mesh.init();
@@ -128,6 +157,10 @@ LOGPRESSO.models.MapWidget = (function(){
       this.geography_mesh.set_bounding_box();
 
       this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
+    },
+
+    parseData: function(){
+
     },
 
     init_threed: function(){
@@ -149,7 +182,7 @@ LOGPRESSO.models.MapWidget = (function(){
 
       this.container.append($(this.renderer.domElement));
 
-      this.renderer.setClearColor(0x000000, 1);
+      this.renderer.setClearColor(0x303030, 1);
       this.renderer.clear();
 
       this.scene = new THREE.Scene();
@@ -181,8 +214,7 @@ LOGPRESSO.models.MapWidget = (function(){
       this.raycaster = new THREE.Raycaster();
 
       this.completeLoadThreed = true;
- 
-
+      this.trigger('threed_load_complete');
     },
 
     animate: function(){
