@@ -137,7 +137,7 @@ LOGPRESSO.models.MapWidget = (function(){
         this.geography_mesh = undefined;
       }
 
-      if (!_.isUndefined(this.data)){
+      if (!_.isUndefined(this.marker)){
         this.scene.remove(this.marker.point_cloud);
         this.marker = null;
         this.data = undefined;
@@ -157,10 +157,6 @@ LOGPRESSO.models.MapWidget = (function(){
       this.geography_mesh.set_bounding_box();
 
       this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
-    },
-
-    parseData: function(){
-
     },
 
     init_threed: function(){

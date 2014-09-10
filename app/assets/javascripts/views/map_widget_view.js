@@ -48,8 +48,6 @@ WY.views.map_widget_view = (function(){
       _.each(gui.__controllers, function(controller){
         controller.onChange(function(value){
           map_widget.updateConfig(default_config);
-
-          
           load_data(get_sample_data_name());
 
         });
