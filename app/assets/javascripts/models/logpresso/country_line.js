@@ -32,7 +32,7 @@ LOGPRESSO.models.CountryLine = (function(){
       sizeAttenuation: true
     });
 
-    this.material.linewidth = 3;
+    this.material.linewidth = 1;
 
   }
 

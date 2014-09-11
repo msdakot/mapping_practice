@@ -43,7 +43,7 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
               country = new LOGPRESSO.models.CountryLine({
                 geometry: shape_geometry,
                 properties: properties,
-                color: color.clone()
+                color: new THREE.Color("#FFFFFF")
               });
 
             }
@@ -75,7 +75,7 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
             country = new LOGPRESSO.models.CountryLine({
               geometry: shape_geometry,
               properties: properties,
-              color: color.clone()
+              color: new THREE.Color("#FFFFFF")
             });
 
           }
