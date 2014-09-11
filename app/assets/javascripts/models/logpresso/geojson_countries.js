@@ -17,7 +17,6 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
       var properties = feature.properties;
       var geometry = feature.geometry;
       // console.log(geometry.coordinates.length);
-      var color = new THREE.Color(colorbrewer.YlGn[6][i % 6]);
       
       _.each(geometry.coordinates, _.bind(function(coordinate){
 
@@ -25,76 +24,89 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
 
 
           _.each(coordinate, _.bind(function(sub_coordinate){
-
-            var shape_contours = this.convert_geometries_to_shapes(sub_coordinate);
-            // console.log(shape_contours);
-            var shape = new THREE.Shape(shape_contours);
-            var shape_geometry = new THREE.ShapeGeometry(shape);
-            var country;
-
-            if (this.type == 'mesh') {
-              country = new LOGPRESSO.models.CountryMesh({
-                geometry: shape_geometry,
-                properties: properties,
-                color: color.clone()
-              });
-
-            } else {
-              country = new LOGPRESSO.models.CountryLine({
-                geometry: shape_geometry,
-                properties: properties,
-                color: new THREE.Color("#FFFFFF")
-              });
-
-            }
+            this.create_mesh_or_line(sub_coordinate, properties);
             
-            country.init();
-
-            this.add(country);
           }, this));
-
-          // geometry_center.divideScalar(coordinate.length);
 
 
         } else if (geometry.type == "Polygon"){
-          var shape_contours = this.convert_geometries_to_shapes(coordinate);
-          // console.log(shape_contours);
-          var shape = new THREE.Shape(shape_contours);
-          var shape_geometry = new THREE.ShapeGeometry(shape);
           
-          var country;
-
-          if (this.type == 'mesh') {
-            country = new LOGPRESSO.models.CountryMesh({
-              geometry: shape_geometry,
-              properties: properties,
-              color: color.clone()
-            });
-
-          } else {
-            country = new LOGPRESSO.models.CountryLine({
-              geometry: shape_geometry,
-              properties: properties,
-              color: new THREE.Color("#FFFFFF")
-            });
-
-          }
-          country.init();
-
-          this.add(country);
-
-
-
+          this.create_mesh_or_line(coordinate, properties);
         }
         
       }, this));
     }, this));
   };
 
-  GeoJSONCountries.prototype.find_country_by_name = function(name){
+  GeoJSONCountries.prototype.create_mesh_or_line = function(coordinate, properties){
+    var shape_contours = this.convert_geometries_to_shapes(coordinate);
+    // console.log(shape_contours);
+    var shape = new THREE.Shape(shape_contours);
+    var shape_geometry = new THREE.ShapeGeometry(shape);
+    var country, country_line;
+
+    if (this.type == 'mesh') {
+      country = new LOGPRESSO.models.CountryMesh({
+        geometry: shape_geometry,
+        properties: properties,
+        color: new THREE.Color("#FFFFFF")
+      });
+
+      country_line = new LOGPRESSO.models.CountryLine({
+        geometry: shape_geometry.clone(),
+        properties: properties,
+        color: new THREE.Color("#303030"),
+        line_width: 2,
+        blending: THREE.MultiplyBlending
+      });
+
+      country.init();
+      country_line.init();
+
+      this.add(country);
+      this.add(country_line);
+
+
+    } else {
+      country = new LOGPRESSO.models.CountryLine({
+        geometry: shape_geometry,
+        properties: properties,
+        color: new THREE.Color("#FFFFFF"),
+        line_width: 1,
+        blending: THREE.AdditiveBlending
+      });
+      country.init();
+
+      this.add(country);
+
+    }
+  };
+
+  GeoJSONCountries.prototype.find_country_by_iso_a3 = function(iso_a3){
     var countries = _.filter(this.children, function(country){
       if (!_.isUndefined(country.properties)){
-        return country.properties.name == name;
+        return country.properties.iso_a3 == iso_a3;
+      } else {
+        return false;
+      }
+    });
+
+    return countries;
+  };
+
+
+  GeoJSONCountries.prototype.find_country_by_local_code = function(local_code){
+    var str_length = String(local_code).length;
+    
+    var countries = _.filter(this.children, function(country){
+      if (!_.isUndefined(country.properties)){
+        if (str_length == 2) {
+          return country.properties.metroCityCode == local_code;
+        } else if (str_length == 4){
+          return country.properties.cityBoroughCode == local_code;
+        } else if (str_length == 8) {
+          return country.properties.dongCode == local_code;
+        }
       } else {
         return false;
       }

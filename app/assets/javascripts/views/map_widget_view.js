@@ -3,9 +3,9 @@ var gui;
 WY.views.map_widget_view = (function(){
   var map_widget,
       default_config = {
-        type: 'marker', //area
-        map: 'world', //world, local
-        unit: '특정시도', // '전국', 특정시도'
+        type: 'area', //area
+        map: 'local', //world, local
+        unit: '전국', // '전국', 특정시도'
         code: 26, //서울
         
         complexity: '시/군/구', // 광역시/도, 시/군/구, 동/읍/면
@@ -43,14 +43,21 @@ WY.views.map_widget_view = (function(){
       container: $("#glContainer"),
       config: default_config
     });
+
     
     map_widget.on('threed_load_complete', function(e){
       _.each(gui.__controllers, function(controller){
+        
         controller.onChange(function(value){
           map_widget.updateConfig(default_config);
-          load_data(get_sample_data_name());
+          map_widget.on('init_geography_complete', function(e){
+            load_data(get_sample_data_name());
+          });
 
         });
+
+
+
       });
 
 
@@ -73,7 +80,7 @@ WY.views.map_widget_view = (function(){
   function get_sample_data_name(){
     var sample_data_file_name;
 
-    if (default_config.map == 'local' && default_config.type == 'area' && default_config.unit == "전국") {
+    if (default_config.map == 'local' && default_config.type == 'area') {
       
       if (default_config.complexity == '광역시/도') {
         sample_data_file_name = "local_area_complexity_1.csv";
@@ -101,6 +108,7 @@ WY.views.map_widget_view = (function(){
           properties: {
             id: parseInt(data._id),
             time: data._time,
+            code: _.isNaN(parseInt(data.code)) ? data.code : parseInt(data.code),
             value: parseFloat(data.value)
           },
           geometry: {

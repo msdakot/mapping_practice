@@ -2,6 +2,8 @@ LOGPRESSO.models.CountryLine = (function(){
   function CountryLine(params){
     
     THREE.Line.call( this );
+    this.blend_mode = params.blending;
+    this.line_width = params.line_width;
     this.material = null;
     this.uniforms = {
       scale: {type: 'f', value: 200},
@@ -25,14 +27,14 @@ LOGPRESSO.models.CountryLine = (function(){
       vertexShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_line.vertex,
       fragmentShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_line.fragment,
 
-      blending: THREE.AdditiveBlending,
+      blending: this.blend_mode,
       depthTest: false,
       depthWrite: false,
       transparent: true,
       sizeAttenuation: true
     });
 
-    this.material.linewidth = 1;
+    this.material.linewidth = this.line_width;
 
   }
 

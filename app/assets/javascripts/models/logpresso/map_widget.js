@@ -6,7 +6,9 @@ LOGPRESSO.models.MapWidget = (function(){
     this.projector;
     this.raycaster;
     this.geography_data = null;
+    this.geography_mesh = null;
     this.scene;
+    this.marker = null;
     this.completeLoadThreed = false;
     // this.data = null;
 
@@ -41,7 +43,6 @@ LOGPRESSO.models.MapWidget = (function(){
 
     setData: function(_data){
       this.data = _data;
-
       this.syncData();
     },
 
@@ -55,8 +56,55 @@ LOGPRESSO.models.MapWidget = (function(){
         this.marker.init();
         this.scene.add(this.marker.point_cloud);
       } else { // area
-
+        this.init_chelopleth();
       }
+    },
+
+    init_chelopleth: function(){
+      var colors = [
+        // new THREE.Color("rgb(247,251,255)"),
+        new THREE.Color("rgb(222,235,247)"),
+        new THREE.Color("rgb(198,219,239)"),
+        new THREE.Color("rgb(158,202,225)"),
+        new THREE.Color("rgb(107,174,214)"),
+        new THREE.Color("rgb(66,146,198)"),
+        new THREE.Color("rgb(33,113,181)"),
+        new THREE.Color("rgb(8,81,156)"),
+        new THREE.Color("rgb(8,48,107)")
+      ];
+
+
+      var quantize = d3.scale.quantize()
+                              .domain([0, d3.max(this.data.features, function(f){ return f.properties.value; })])
+                              .range(d3.range(colors.length));
+
+      _.each(this.data.features, _.bind(function(feature){
+        var countries, geometry_center = new THREE.Vector3();
+
+        if (_.isString(feature.properties["code"])){
+          countries = this.geography_mesh.find_country_by_iso_a3(feature.properties["code"]);
+        } else {
+          countries = this.geography_mesh.find_country_by_local_code(feature.properties["code"]);
+        }
+        
+        
+
+        
+
+        _.each(countries, function(country){
+          country.change_color(colors[quantize(feature.properties.value)]);
+          geometry_center.copy(country.geometry.boundingBox.center());
+        });
+
+        //  var label = new WY.models.CountryLabel({
+        //   name: feature.properties.value
+        // });
+
+        // label.init();
+        // label.position.copy(geometry_center);
+        // scene.add(label);
+
+      }, this));
     },
 
     updateConfig: function(config){
@@ -137,7 +185,7 @@ LOGPRESSO.models.MapWidget = (function(){
         this.geography_mesh = undefined;
       }
 
-      if (!_.isUndefined(this.marker)){
+      if (!_.isNull(this.marker)){
         this.scene.remove(this.marker.point_cloud);
         this.marker = null;
         this.data = undefined;
@@ -157,6 +205,9 @@ LOGPRESSO.models.MapWidget = (function(){
       this.geography_mesh.set_bounding_box();
 
       this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
+
+
+      this.trigger('init_geography_complete', {target: this});
     },
 
     init_threed: function(){
@@ -210,7 +261,7 @@ LOGPRESSO.models.MapWidget = (function(){
       this.raycaster = new THREE.Raycaster();
 
       this.completeLoadThreed = true;
-      this.trigger('threed_load_complete');
+      this.trigger('threed_load_complete', {target: this});
     },
 
     animate: function(){
