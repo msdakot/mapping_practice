@@ -18,7 +18,7 @@ LOGPRESSO.models.CountryMesh = (function(){
       vertexShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_color.vertex,
       fragmentShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_color.fragment,
 
-      blending: THREE.AdditiveBlending,
+      blending: this.blending,
       depthTest: false,
       depthWrite: false,
       transparent: true,

@@ -43,43 +43,52 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
     // console.log(shape_contours);
     var shape = new THREE.Shape(shape_contours);
     var shape_geometry = new THREE.ShapeGeometry(shape);
-    var country, country_line;
+    var country, country_line, country_property, country_line_property;
 
     if (this.type == 'mesh') {
-      country = new LOGPRESSO.models.CountryMesh({
+      country_property = {
         geometry: shape_geometry,
         properties: properties,
         color: new THREE.Color("#FFFFFF")
-      });
+      };
 
-      country_line = new LOGPRESSO.models.CountryLine({
+      country_line_property = {
         geometry: shape_geometry.clone(),
         properties: properties,
         color: new THREE.Color("#303030"),
         line_width: 2,
         blending: THREE.MultiplyBlending
-      });
-
-      country.init();
-      country_line.init();
-
-      this.add(country);
-      this.add(country_line);
+      }
 
 
     } else {
-      country = new LOGPRESSO.models.CountryLine({
+      country_property = {
         geometry: shape_geometry,
+        properties: properties,
+        color: new THREE.Color("#222222"),
+        blending: THREE.MultiplyBlending
+      };
+
+      country_line_property = {
+        geometry: shape_geometry.clone(),
         properties: properties,
         color: new THREE.Color("#FFFFFF"),
         line_width: 1,
         blending: THREE.AdditiveBlending
-      });
-      country.init();
-
-      this.add(country);
+      }
 
     }
+
+
+    country = new LOGPRESSO.models.CountryMesh(country_property);
+
+    country_line = new LOGPRESSO.models.CountryLine(country_line_property);
+
+    country.init();
+    country_line.init();
+
+    this.add(country);
+    this.add(country_line);
   };
 
   GeoJSONCountries.prototype.find_country_by_iso_a3 = function(iso_a3){

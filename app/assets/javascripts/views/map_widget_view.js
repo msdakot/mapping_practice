@@ -3,8 +3,8 @@ var gui;
 WY.views.map_widget_view = (function(){
   var map_widget,
       default_config = {
-        type: 'area', //area
-        map: 'local', //world, local
+        type: 'marker', //area
+        map: 'world', //world, local
         unit: '전국', // '전국', 특정시도'
         code: 26, //서울
         
