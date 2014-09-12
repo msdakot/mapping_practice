@@ -54,7 +54,7 @@ LOGPRESSO.models.MapWidget = (function(){
         });
 
         this.marker.init();
-        // this.scene.add(this.marker.point_cloud);
+        this.scene.add(this.marker.point_cloud);
       } else { // area
         this.init_chelopleth();
       }
