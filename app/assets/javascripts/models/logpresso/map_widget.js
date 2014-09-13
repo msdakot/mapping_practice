@@ -55,6 +55,7 @@ LOGPRESSO.models.MapWidget = (function(){
 
         this.marker.init();
         this.scene.add(this.marker.point_cloud);
+        console.info("point cloud added");
       } else { // area
         this.init_chelopleth();
       }
@@ -201,6 +202,8 @@ LOGPRESSO.models.MapWidget = (function(){
 
       this.geography_mesh.init();
       this.scene.add(this.geography_mesh);
+      console.info("geography mesh added");
+
 
       this.geography_mesh.set_bounding_box();
 

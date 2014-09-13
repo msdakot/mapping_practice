@@ -19,9 +19,9 @@ LOGPRESSO.models.CountryMesh = (function(){
       fragmentShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_color.fragment,
 
       blending: this.blending,
-      depthTest: false,
-      depthWrite: false,
-      transparent: true,
+      depthTest: true,
+      depthWrite: true,
+      transparent: false,
       sizeAttenuation: true
     });
 

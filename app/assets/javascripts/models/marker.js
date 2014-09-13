@@ -32,15 +32,12 @@ WY.models.Marker = (function(){
 
       this.set_geometries();
 
-      // console.log(this.geometry.vertices);
       this.point_cloud = new THREE.PointCloud(this.geometry, this.material);
     },
 
     set_geometries: function(){
 
       this.geometry = new THREE.Geometry();
-      // console.log(this.marker_data.features);
-
       _.each(this.marker_data.features, _.bind(function(feature){
         var properties = feature.properties;
 
@@ -48,13 +45,12 @@ WY.models.Marker = (function(){
 
       }, this));
 
-      // console.log(this.points);
     },
 
     convert_coordinates: function(coordinates){
       var vertex = new THREE.Vector3();
       vertex.z = 0;
-      vertex.x = coordinates[0];// * Math.cos(coordinates[0]);
+      vertex.x = coordinates[0];
       vertex.y = coordinates[1];
 
       return vertex;

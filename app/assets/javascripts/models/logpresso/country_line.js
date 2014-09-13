@@ -20,6 +20,7 @@ LOGPRESSO.models.CountryLine = (function(){
     this.geometry = params.geometry;
     this.color = params.color;
     this.properties = params.properties;
+    this.transparent = params.transparent;
 
     this.material = new THREE.ShaderMaterial({
       uniforms: this.uniforms,
@@ -30,7 +31,7 @@ LOGPRESSO.models.CountryLine = (function(){
       blending: this.blend_mode,
       depthTest: false,
       depthWrite: false,
-      transparent: true,
+      transparent: this.transparent,
       sizeAttenuation: true
     });
 

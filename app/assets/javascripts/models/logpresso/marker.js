@@ -29,7 +29,7 @@ LOGPRESSO.models.Marker = (function(){
         fragmentShader: LOGPRESSO.constants.ShaderLoader.shaders.basic_marker.fragment,
 
 
-        blending:     THREE.AdditiveBlending,
+        blending:     THREE.NormalBlending,
         depthTest:    false,
         depthWrite:   false,
         transparent:  true,

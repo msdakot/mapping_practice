@@ -18,7 +18,7 @@ WY.models.CountryMesh = (function(){
       vertexShader: WY.constants.ShaderLoader.shaders.basic_color.vertex,
       fragmentShader: WY.constants.ShaderLoader.shaders.basic_color.fragment,
 
-      blending: THREE.AdditiveBlending,
+      blending: THREE.MultiplyBlending,
       depthTest: false,
       depthWrite: false,
       transparent: true,

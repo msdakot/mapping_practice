@@ -49,16 +49,20 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
       country_property = {
         geometry: shape_geometry,
         properties: properties,
-        color: new THREE.Color("#FFFFFF")
+        color: new THREE.Color("#404040"),
+        blending: THREE.NormalBlending,
       };
 
       country_line_property = {
         geometry: shape_geometry.clone(),
         properties: properties,
-        color: new THREE.Color("#303030"),
+        color: new THREE.Color("#000000"),
         line_width: 2,
-        blending: THREE.MultiplyBlending
+        blending: THREE.MultiplyBlending,
+        transparent: true
       }
+
+      console.log("에이리어 렌더링 중");
 
 
     } else {
@@ -66,15 +70,16 @@ LOGPRESSO.models.GeoJSONCountries = (function(){
         geometry: shape_geometry,
         properties: properties,
         color: new THREE.Color("#222222"),
-        blending: THREE.MultiplyBlending
+        blending: THREE.NormalBlending
       };
 
       country_line_property = {
         geometry: shape_geometry.clone(),
         properties: properties,
-        color: new THREE.Color("#FFFFFF"),
+        color: new THREE.Color("#000000"),
         line_width: 1,
-        blending: THREE.AdditiveBlending
+        blending: THREE.NormalBlending,
+        transparent: false
       }
 
     }

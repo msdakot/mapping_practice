@@ -36,7 +36,7 @@ WY.views.practice_05_view = (function(){
 
   function load_geojson_world(){
     $.ajax({
-      url: '/assets/world_countries.json',
+      url: '/assets/world.json',
       type: 'GET',
       success: function(data){
         world_geojson_data = data;
@@ -110,7 +110,7 @@ WY.views.practice_05_view = (function(){
     });
 
     world_countries.init();
-    scene.add(world_countries.mesh);
+    scene.add(world_countries);
 
     var marker = new WY.models.Marker({
       marker_data: marker_data
