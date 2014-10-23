@@ -41,7 +41,7 @@ WY.views.practice_09_view = (function(){
 
   function load_geojson_world(){
     $.ajax({
-      url: '/assets/world_countries.json',
+      url: '/assets/world.json',
       type: 'GET',
       success: function(data){
         world_geojson_data = data;
@@ -139,7 +139,7 @@ WY.views.practice_09_view = (function(){
     // tooltip.init();
     // tooltip.hide();
 
-    init_choropleth();
+    // init_choropleth();
   }
 
   function init_choropleth(){

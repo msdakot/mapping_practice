@@ -1,12 +1,94 @@
-<%= render '/layouts/map_menu' %>
 
-
-<div id="glContainer">
-  <!-- 3D webgl canvas here -->
-</div>
 
 <script>
-  $(document).ready(function (e) {
-    WY.views.practice_15_view();
-  });
+
+  var container;
+  var camera, scene, projector, renderer;
+  var particleMaterial;            
+        var viewWidth = window.innerWidth - 200;
+        var viewHeight =  window.innerHeight - 200;
+        var cameraOffset = -300;//viewWidth;
+  var objects = [];            
+  init();     
+
+  function init() {
+
+    container = $("<div/>").appendTo($("body"));
+    container.css({
+      position: 'absolute',
+      left: '0%',
+      top: '0%'
+    });
+
+
+            
+    camera = new THREE.PerspectiveCamera( 45, viewWidth / viewHeight, 0.3, 10000000 );
+    camera.position.set( 200, 0, cameraOffset );                
+
+    scene = new THREE.Scene();
+
+    var geometry = new THREE.BoxGeometry( 100, 100, 100 );
+    
+
+            var object = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( { color: 0x0000ff, opacity: 0.5 } ) );
+            object.position.x = 0;
+            object.position.y = 0;
+            object.position.z = 0;
+
+            object.scale.x = 1;
+            object.scale.y = 1;
+            object.scale.z = 1;
+
+            object.rotation.x = Math.PI / 4;
+            object.rotation.y = Math.PI / 4;
+            object.rotation.z = Math.PI / 4;
+
+            scene.add( object );
+
+            objects.push( object );
+
+
+
+    projector = new THREE.Projector();
+
+    renderer = new THREE.CanvasRenderer();
+    renderer.setClearColor( 0xf0f0f0 );
+    renderer.setSize( viewWidth, viewHeight );
+                       
+    container.append( $(renderer.domElement) );
+
+    document.addEventListener( 'mousedown', onDocumentMouseDown, false );       
+
+            camera.lookAt(new THREE.Vector3(0,0,0));   
+            render();                
+  }
+
+
+        
+        function onDocumentMouseDown( event ) {                
+           var mouse3D = new THREE.Vector3(  ( event.offsetX / viewWidth ) * 2 - 1,
+                                         - ( event.offsetY / viewHeight ) * 2 + 1,
+                                        0.5 ); 
+
+
+            projector.unprojectVector( mouse3D, camera );   
+            mouse3D.sub( camera.position );                
+            mouse3D.normalize();
+            var raycaster = new THREE.Raycaster( camera.position, mouse3D );
+            var intersects = raycaster.intersectObjects( objects );
+            // Change color if hit block
+            if ( intersects.length > 0 ) {
+                intersects[ 0 ].object.material.color.setHex( Math.random() * 0xffffff );
+            }
+            render();
+        }
+
+  var radius = 600;
+  var theta = 0;
+
+  function render() {       
+    renderer.render( scene, camera );
+  }
+
 </script>
+

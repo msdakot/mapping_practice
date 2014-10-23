@@ -56,6 +56,10 @@ LOGPRESSO.models.MapWidget = (function(){
         this.marker.init();
         this.scene.add(this.marker.point_cloud);
         console.info("point cloud added");
+
+
+        console.info("this.scene.children[0] length : " + this.scene.children[0].children.length);
+        console.info("this.scene.children[1] length : " + this.scene.children[1].geometry.vertices.length);
       } else { // area
         this.init_chelopleth();
       }
@@ -209,6 +213,7 @@ LOGPRESSO.models.MapWidget = (function(){
 
       this.controls.lookAtBoundingBox(this.geography_mesh.boundingBox);
 
+      console.info(this.scene.children[0].children.length);
 
       this.trigger('init_geography_complete', {target: this});
     },
@@ -217,8 +222,11 @@ LOGPRESSO.models.MapWidget = (function(){
       this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
       var devicePixelRatio = window.devicePixelRatio || 1;
-      var screen_width = $(window).width()-5;
-      var screen_height = $(window).height()-5;
+      console.info(this.container.width());
+      console.info(this.container.height());
+      
+      var screen_width = this.container.width();
+      var screen_height = this.container.height() == 0 ? $(window).height(): this.container.height();
 
       this.renderer.setSize(screen_width, screen_height);
       // renderer.setViewport(0, 0, screen_width * devicePixelRatio, screen_height * devicePixelRatio);
@@ -238,7 +246,7 @@ LOGPRESSO.models.MapWidget = (function(){
       this.scene = new THREE.Scene();
 
       this.camera = new THREE.PerspectiveCamera(
-        45, window.innerWidth / window.innerHeight, 0.000001, 1000000
+        45, screen_width / screen_height, 0.000001, 1000000
       );
 
       this.camera.position.x = 4;

@@ -40,7 +40,7 @@ WY.views.practice_07_view = (function(){
 
   function load_geojson_world(){
     $.ajax({
-      url: '/assets/world_countries.json',
+      url: '/assets/world.json',
       type: 'GET',
       success: function(data){
         world_geojson_data = data;

@@ -3,6 +3,7 @@ class Map::MapController < ApplicationController
   end
 
   def practice_02
+    render layout: false
   end
 
   def practice_03

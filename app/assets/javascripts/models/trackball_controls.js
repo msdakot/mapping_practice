@@ -1,3 +1,5 @@
+
+
 /**
  * @author Eberhard Graether / http://egraether.com/
  * @author Mark Lundin  / http://mark-lundin.com
@@ -393,7 +395,7 @@ THREE.TrackballControls = function ( object, domElement, _target ) {
     // this.object.position.y = _zoomStart.y;
     // this.target.x = _zoomStart.x;
     // this.target.y = _zoomStart.y;
-
+    
 
 
     if ( lastPosition.distanceToSquared( _this.object.position ) > EPS ) {

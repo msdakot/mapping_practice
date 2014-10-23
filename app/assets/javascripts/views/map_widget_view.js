@@ -4,10 +4,9 @@ WY.views.map_widget_view = (function(){
   var map_widget,
       default_config = {
         type: 'marker', //area
-        map: 'world', //world, local
+        map: 'local', //world, local
         unit: '전국', // '전국', 특정시도'
         code: 26, //서울
-        
         complexity: '시/군/구', // 광역시/도, 시/군/구, 동/읍/면
         x: undefined,
         y: undefined,
@@ -50,9 +49,7 @@ WY.views.map_widget_view = (function(){
         
         controller.onChange(function(value){
           map_widget.updateConfig(default_config);
-          map_widget.on('init_geography_complete', function(e){
-            load_data(get_sample_data_name());
-          });
+        
 
         });
 
@@ -61,6 +58,10 @@ WY.views.map_widget_view = (function(){
       });
 
 
+      load_data(get_sample_data_name());
+    });
+
+    map_widget.on('init_geography_complete', function(e){
       load_data(get_sample_data_name());
     });
 
@@ -103,19 +104,22 @@ WY.views.map_widget_view = (function(){
     };
 
     d3.csv("/assets/" + sample_data_file_name, function(d){
-      _.each(d, function(data){
-        parsed_data.features.push({
-          properties: {
-            id: parseInt(data._id),
-            time: data._time,
-            code: _.isNaN(parseInt(data.code)) ? data.code : parseInt(data.code),
-            value: parseFloat(data.value)
-          },
-          geometry: {
-            type: "Point",
-            coordinates: [parseFloat(data.x), parseFloat(data.y)]
-          } 
-        });
+      _.each(d, function(data, i){
+        if (i < 100) {
+          parsed_data.features.push({
+            properties: {
+              id: parseInt(data._id),
+              time: data._time,
+              code: _.isNaN(parseInt(data.code)) ? data.code : parseInt(data.code),
+              value: parseFloat(data.value)
+            },
+            geometry: {
+              type: "Point",
+              coordinates: [parseFloat(data.x), parseFloat(data.y)]
+            } 
+          });
+        }
+
       });
       
       map_widget.setData(parsed_data);
